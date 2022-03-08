@@ -1,0 +1,229 @@
+/* import fonts locally */
+@font-face {
+  font-family: 'Airbnb Cereal-Black';
+  src: url('../fonts/AirbnbCereal-Black.ttf') format('ttf');
+  src: url('../fonts/AirbnbCereal-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal-Bold';
+  src: url('../fonts/AirbnbCereal-Bold.ttf') format('ttf');
+  src: url('../fonts/AirbnbCereal-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal-Book';
+  src: url('../fonts/AirbnbCereal-Book.ttf') format('ttf');
+  src: url('../fonts/AirbnbCereal-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal-ExtraBold';
+  src: url('../fonts/AirbnbCereal-ExtraBold.ttf') format('ttf');
+  src: url('../fonts/AirbnbCereal-ExtraBold.woff') format('woff');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal-Light';
+  src: url('../fonts/AirbnbCereal-Light.ttf') format('ttf');
+  src: url('../fonts/AirbnbCereal-Light.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Airbnb Cereal-Medium';
+  src: url('../fonts/AirbnbCereal-Medium.ttf') format('ttf');
+  src: url('../fonts/AirbnbCereal-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMachina-Light';
+  src: url('../fonts/NeueMachina-Light.otf') format('otf');
+  src: url('../fonts/NeueMachina-Light.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMachina-Regular';
+  src: url('../fonts/NeueMachina-Regular.otf') format('otf');
+  src: url('../fonts/NeueMachina-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMachina-Ultrabold';
+  src: url('../fonts/NeueMachina-Ultrabold.otf') format('otf');
+  src: url('../fonts/NeueMachina-Ultrabold.woff') format('woff');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background-image: url('../public/img/Splines.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: center; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.airbnb-cereal-bold {
+  font-family: 'Airbnb Cereal-Bold';
+}
+.airbnb-cereal-medium {
+  font-family: 'Airbnb Cereal-Medium';
+}
+.airbnb-cereal-light {
+  font-family: 'Airbnb Cereal-Light';
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-image: url('../public/img/Splines.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 100%;
+}
+
+.footer {
+  height: 415px;
+  width: 100%;
+
+  position: relative;
+  bottom: 0;
+}
+
+.neue-machina-ultrabold {
+  font-family: 'NeueMachina-Ultrabold';
+}
+
+.sidebar-line {
+  border: 1px solid #3d4852;
+}
+
+.img-rect {
+  position: relative;
+  display: inline-block;
+}
+
+.img-rect-image {
+  vertical-align: bottom;
+}
+
+.img-rect:after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border: 1px solid #606f7b;
+  width: 100%;
+  height: 90%;
+  z-index: -1;
+}
+
+.view-project{
+  position: relative;
+  display: inline-block;
+}
+
+.view-project:after{
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border: 1px solid #606f7b;
+  width: 99%;
+  height: 90%;
+  z-index: -1;
+}
+
+.skill-size {
+  font-size: 2.7rem;
+}
+
+.block-line {
+  background-image: url('../icons/dash.svg');
+}
+
+.circle-mb {
+  margin-bottom: 500px;
+}
+.circle-mb1 {
+  margin-bottom: 300px;
+}
+.circle-mb2 {
+  margin-bottom: 500px;
+}
+
+.space1 {
+  margin-bottom: 530px;
+}
+.space2 {
+  margin-bottom: 330px;
+}
+
+.space2s {
+  margin-bottom: 315px;
+}
+.space3 {
+  margin-bottom: 550px;
+}
+
+.margin-b {
+  margin-bottom: 70px;
+}
+.margin-b2 {
+  margin-bottom: 360px;
+}
+.margin-b3 {
+  margin-bottom: 160px;
+}
+.margin-b4 {
+  margin-bottom: 90px;
+}
+.margin-b5 {
+  margin-bottom: 120px;
+}
+
+.work{
+  background-color: #F8FAFC;
+}
+
+.h-425{
+  height: 425px;
+}
+
+.h-835{
+  height: 835px;
+}
+
+.sg_bg{
+  background: #F1F5F8;
+}
