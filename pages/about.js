@@ -6,7 +6,7 @@ import BounceArrow from '../icons/BounceArrow';
 import Circle from '../icons/Circle';
 import RightArrow from '../icons/RightArrow';
 
-const about = () => {
+const About = () => {
   const [show, setShow] = useState(false);
   function changeColor(e) {
     e.target.style.color = '#EF4444';
@@ -216,35 +216,35 @@ const about = () => {
         </div>
         {/* end */}
         {/* new */}
-        <div class=" h-full pt-10 pl-12 space-y-12 pb-32  ">
+        <div className=" h-full pt-10 pl-12 space-y-12 pb-32  ">
           {' '}
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
             {' '}
             Figma{' '}
           </p>{' '}
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl ">
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl ">
             {' '}
             Adobe XD{' '}
           </p>{' '}
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
             Adobe illustration
           </p>
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
             Adobe Photoshop
           </p>
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
             Framer
           </p>
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white h-5 dark:text-white text-2xl">
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white h-5 dark:text-white text-2xl">
             Google Services
           </p>
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white text-2xl">Miro</p>
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white   text-2xl">
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white text-2xl">Miro</p>
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white   text-2xl">
             Whimsical
           </p>
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl">Lookback</p>
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl">Notion</p>
-          <p class="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white h-5 text-2xl">Jira</p>
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl">Lookback</p>
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl">Notion</p>
+          <p className="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white h-5 text-2xl">Jira</p>
         </div>
         {/* new end */}
       </div>
@@ -259,41 +259,41 @@ const about = () => {
       {/* experience */}
       <div className="flex mb-10 mt-10">
         {/* b  */}
-        <div class=" h-full pt-10 pr-10 ">
+        <div className=" h-full pt-10 pr-10 ">
           {' '}
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white text-2xl space1 ">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white text-2xl space1 ">
             {' '}
             Medsaf Disrupt Pharmacy{' '}
             <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
               July 2021 - Lagos, Nigeria
             </span>
           </p>{' '}
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2  ">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2  ">
             {' '}
             Parthian Partners (i-invest){' '}
             <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
               July 2021 - Lagos, Nigeria
             </span>
           </p>{' '}
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2 ">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2 ">
             KUPLR
             <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
               July 2021 - Lagos, Nigeria
             </span>
           </p>
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2 ">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2 ">
             Yudimy
             <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
               July 2021 - Lagos, Nigeria
             </span>
           </p>
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2s ">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2s ">
             VOBBS
             <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
               July 2021 - Lagos, Nigeria
             </span>
           </p>
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white text-2xl ">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white text-2xl ">
             <div>
               AFREAL{' '}
               <small className="text-xs">
@@ -332,10 +332,10 @@ const about = () => {
         </div>
         {/* end */}
         {/* new */}
-        <div class=" h-full pt-10 pl-12 pb-32  ">
+        <div className=" h-full pt-10 pl-12 pb-32  ">
           {' '}
           <div className=" mb-32 ">
-            <p class="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
               {' '}
               UX {'&'} UI Designer (Remote){' '}
             </p>{' '}
@@ -344,7 +344,7 @@ const about = () => {
                 Medsaf is a medical tech firm backed by Crunchbase.
               </li>
               <li className="pb-4">
-                At Medsaf I’m currently incharge of designing medical solutions
+                At Medsaf I{"’"}m currently incharge of designing medical solutions
                 that seamlessly brings authentic medications to stakeholders
                 (Hospitals, etc) and individuals across Africa.
               </li>
@@ -364,19 +364,19 @@ const about = () => {
                 investor pitch rounds
               </li>
               <li className="pb-4">
-                Medsaf was among the winners of Google’s Black Founders Fund
+                Medsaf was among the winners of Google{"’"}s Black Founders Fund
                 2021
               </li>
             </ul>
           </div>
           <div className=" margin-b ">
-            <p class="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
               {' '}
               UX {'&'} UI Designer{' '}
             </p>{' '}
             <ul className="airbnb-cereal-medium text-base text-gray-500 dark:text-white pl-5 pt-5 max-w-xl  list-disc">
               <li className="pb-4">
-                i-invest is Nigeria’s foremost digital platform for Treasury
+                i-invest is Nigeria{"’"}s foremost digital platform for Treasury
                 Bills, and now the preferred financial services marketplace in
                 Africa.{' '}
               </li>
@@ -396,7 +396,7 @@ const about = () => {
             </ul>
           </div>
           <div className="margin-b3">
-            <p class="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
               {' '}
               Lead Product Designer (Contract)
             </p>{' '}
@@ -416,7 +416,7 @@ const about = () => {
             </ul>
           </div>
           <div className="margin-b4">
-            <p class="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
               {' '}
               Product Designer
             </p>{' '}
@@ -438,7 +438,7 @@ const about = () => {
             </ul>
           </div>
           <div className="margin-b5">
-            <p class="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
               {' '}
               UX {'&'} UI Designer (Contract){' '}
             </p>{' '}
@@ -458,7 +458,7 @@ const about = () => {
             </ul>
           </div>
           <div>
-            <p class="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
               {' '}
               UX {'&'} UI Designer (Contract){' '}
             </p>{' '}
@@ -508,35 +508,35 @@ const about = () => {
           </div>
         </div>
 
-        <div class=" h-full max-w-xs pl-4 pb-32 pt-9 ">
+        <div className=" h-full max-w-xs pl-4 pb-32 pt-9 ">
           {' '}
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14 mt-4">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14 mt-4">
             {' '}
             Google{' '}
             <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
               UX Design - 2022
             </span>
           </p>{' '}
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14 ">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14 ">
             {' '}
             Udemy{' '}
             <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
               Learn Jira Real world examples - 2021
             </span>
           </p>{' '}
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14">
             Product school
             <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
               Product Masterclass : How to build digital products - 2020
             </span>
           </p>
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14">
             Udacity
             <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
               User Experience Design Nano Degree - 2020
             </span>
           </p>
-          <p class="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+          <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
             University of Abuja
             <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
               B.Sc. PHYSICS - 2015
@@ -555,4 +555,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

@@ -67,13 +67,13 @@ const work = () => {
           <br /> This is what everyone sees, and it is true. But there is a
           seemingly invisible yet very strong player in the market; The
           Sub-Agents Sub-agents are study-abroad business owners in their
-          respective countries that don’t have agent codes or are not directly
+          respective countries that don{"’"}t have agent codes or are not directly
           affiliated with international universities, so they tend to partner up
           with agents other agents who are directly affiliated with these
           universities and send their student applications to the Agents. <br />{' '}
-          Universities don’t grant out agent codes because they have to be sure
+          Universities don{"’"}t grant out agent codes because they have to be sure
           of who they are partnering with, and it is not advisable for
-          sub-agents that are not in the university’s country to get agent codes
+          sub-agents that are not in the university{"’"}s country to get agent codes
           because then they cannot monitor the admission and help out the
           student after arrival.
           <br /> The Universities also do not account for the sub-agents or
@@ -335,7 +335,7 @@ const work = () => {
           sub-agents the same rights as direct agents. <br /> This way,
           Subagents can submit applications themselves directly to the
           universities, the direct agents can spend less time filling
-          applications. <br /> And if the direct agent's recruitment process
+          applications. <br /> And if the direct agent{"'"}s recruitment process
           depends entirely on sub-agents, then the direct agent does not have to
           do anything anymore.
         </p>
@@ -358,7 +358,7 @@ const work = () => {
         </h6>
         <p className="airbnb-cereal-light text-lg leading-8 text-gray-600 mt-4">
           For agents to send applications through Vobb, there needs to be an
-          integration between Vobb and the school's existing systems. Vobb
+          integration between Vobb and the school{"'"}s existing systems. Vobb
           basically becomes a substitute to all universities existing Agent
           portal <br /> A university admin will manage the University or
           institutions account on Vobb. The university admin will have the
@@ -367,14 +367,14 @@ const work = () => {
             <li>Setting up profile</li>
             <li>
               Accepting / declining activation requests from Agents (Activation
-              requests will be explained under ‘Agents’)
+              requests will be explained under {"‘"}Agents{"’"})
             </li>
             <li>Viewing incoming applications and general statistics</li>
           </ul>
           When an agent submits an application on vobb, Vobb submits that
           application on the universities enrollment or admission system
           indicating the direct agent the application is from. Just like the
-          university's existing agent portals. <br /> University admins can also
+          university{"'"}s existing agent portals. <br /> University admins can also
           view applications on Vobb.
         </p>
       </div>
@@ -385,7 +385,7 @@ const work = () => {
         </h6>
         <p className="airbnb-cereal-light text-lg leading-8 text-gray-600 mt-4">
           For agents to send applications through Vobb, there needs to be an
-          integration between Vobb and the school's existing systems. Vobb
+          integration between Vobb and the school{"'"}s existing systems. Vobb
           basically becomes a substitute to all universities existing Agent
           portal <br /> A university admin will manage the University or
           institutions account on Vobb. The university admin will have the
@@ -394,14 +394,14 @@ const work = () => {
             <li>Setting up profile</li>
             <li>
               Accepting / declining activation requests from Agents (Activation
-              requests will be explained under ‘Agents’)
+              requests will be explained under {"‘"}Agents{"’"})
             </li>
             <li>Viewing incoming applications and general statistics</li>
           </ul>
           When an agent submits an application on vobb, Vobb submits that
           application on the universities enrollment or admission system
           indicating the direct agent the application is from. Just like the
-          university's existing agent portals. <br /> University admins can also
+          university{"'"}s existing agent portals. <br /> University admins can also
           view applications on Vobb.
         </p>
       </div>
@@ -530,7 +530,7 @@ const work = () => {
 
         <p className="airbnb-cereal-light text-xl text-gray-600 leading-8">
           I love beign a designer because it allows me to explore different
-          perspective of people’s lives, understanding their challenges,
+          perspective of people{"’"}s lives, understanding their challenges,
           frustrations and in the long run be able to provide solutions and make
           their lives alot easier. Working on this product was challenging
           because i had to understand not just one market, speaking to people

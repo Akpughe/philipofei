@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
 
-const index = () => {
+const Toggler = () => {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -48,4 +48,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Toggler;
