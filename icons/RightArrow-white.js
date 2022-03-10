@@ -1,25 +1,24 @@
 import React from 'react';
 
-const BounceArrow = () => {
+const RightArrowwhite = () => {
   return (
     <svg
-      className="animate-bounce"
-      width="20"
+      width="21"
       height="21"
-      viewBox="0 0 20 21"
+      viewBox="0 0 21 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M10 4.6665V16.3332"
-        stroke="#101828"
+        d="M4.66669 10.5L16.3334 10.5"
+        stroke="#F8FAFC"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M15.8332 10.5L9.99984 16.3333L4.1665 10.5"
-        stroke="#101828"
+        d="M10.5 4.66732L16.3333 10.5007L10.5 16.334"
+        stroke="#F8FAFC"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -28,4 +27,4 @@ const BounceArrow = () => {
   );
 };
 
-export default BounceArrow;
+export default RightArrowwhite;

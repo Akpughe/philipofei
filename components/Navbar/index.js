@@ -24,7 +24,7 @@ const Navbar = () => {
                 x: '100%',
               }}
               transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
-              className="z-50 bg-white sm:w-4/6 right-0 w-full h-screen fixed border"
+              className="z-50 bg-white dark:bg-black sm:w-4/6 right-0 w-full h-screen fixed border dark:border-0"
             >
               {' '}
               <Sidebar show={show} close={handleShow} />

@@ -81,14 +81,40 @@ body {
   background-image: url('../public/img/Splines.png');
   background-repeat: no-repeat;
   background-size: contain;
-  /* background-position: center; */
+  /* background-position: right; */
 }
 
 * {
   box-sizing: border-box;
 }
 
+.inp {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #14181B;
+  padding: 15px 10px;
+  color: #B8C2CC;
+  background-color: transparent;
+  font-size: 24px;
+}
+.inp-white {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #8795A1;
+  padding: 15px 10px;
+  color: #B8C2CC;
+  background-color: transparent;
+  font-size: 24px;
+}
 
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.4s 0.4s ease; 
+  text-indent: -100%;
+  opacity: 1;
+}
+/* input:focus {
+  border-color: green
+} */
 
 .airbnb-cereal-bold {
   font-family: 'Airbnb Cereal-Bold';
@@ -144,7 +170,7 @@ body {
   top: 1rem;
   border: 1px solid #606f7b;
   width: 100%;
-  height: 90%;
+  height: 99%;
   z-index: -1;
 }
 
@@ -170,6 +196,10 @@ body {
 
 .block-line {
   background-image: url('../icons/dash.svg');
+}
+
+.block-line-white {
+  background-image: url('../icons/dash-white.svg');
 }
 
 .circle-mb {
@@ -214,6 +244,10 @@ body {
 
 .work{
   background-color: #F8FAFC;
+}
+
+.work-white{
+  background: #1D2939;
 }
 
 .h-425{
