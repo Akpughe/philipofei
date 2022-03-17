@@ -567,7 +567,7 @@ const Work = () => {
 
       <div className="mt-32">
         <Link href={''}>
-          <a className="view-project neue-machina-ultrabold bg-black dark:bg-white text-white py-5 px-10 cursor-pointer">
+          <a className={` view-project neue-machina-ultrabold bg-black dark:bg-white text-white py-5 px-10 cursor-pointer`}>
             <p className="flex text-white text-lg dark:text-black">
               View next project{' '}
               <i className="ml-3">

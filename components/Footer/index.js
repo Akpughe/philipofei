@@ -14,13 +14,13 @@ const Footer = () => {
         </h1>
       </div>
       <div className="">
-        <div className=" h-5p w-full bg-black dark:bg-white mb-4 "></div>
+        <div className=" h-5p w-full bg-black dark:bg-gray-800 mb-4 "></div>
         <div className="flex justify-between text-sm">
           <div>
             © <span className="font-bold airbnb-cereal-bold">2022</span> -{' '}
-            <span className="font-bold airbnb-cereal-bold">Philip Ofei,</span> {' '}
-            <span className="devby airbnb-cereal-medium">Developed by</span> {' '}
-            <span className="font-bold airbnb-cereal-bold underline">DAVAK</span>{' '}
+            <span className="font-bold airbnb-cereal-bold  dark:text-gray-500">Philip Ofei,</span> {' '}
+            <span className="devby airbnb-cereal-medium  dark:text-white">Developed by</span> {' '}
+            <span className="font-bold airbnb-cereal-bold underline  dark:text-gray-500">DAVAK</span>{' '}
           </div>
           <div className="flex items-center">
             <div className="flex mr-6">

@@ -253,10 +253,10 @@ body {
 }
 
 .footer {
-  /* height: 415px; */
+  height: 280px;
   width: 100%;
   margin-top: 200px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   position: relative;
   bottom: 0;
 }
@@ -311,6 +311,10 @@ body {
   position: relative;
   display: inline-block;
 }
+.view-project-white {
+  position: relative;
+  display: inline-block;
+}
 
 .view-project:after {
   content: '';
@@ -318,6 +322,16 @@ body {
   left: 1rem;
   top: 1rem;
   border: 1px solid #606f7b;
+  width: 99%;
+  height: 90%;
+  z-index: -1;
+}
+.view-project-white:after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border: 1px solid #F1F5F8;
   width: 99%;
   height: 90%;
   z-index: -1;
