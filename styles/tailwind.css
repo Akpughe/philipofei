@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base { */
   body {
     @apply bg-white dark:bg-midnight-900;
     /* @apply min-h-screen; */
   }
-}
+/* } */
