@@ -79,8 +79,8 @@ const About = () => {
           </div>
           {/* image */}
           <div className="sm:flex hidden justify-center flex-1 px-4 -mt-4 ">
-            <motion.div variants={fadeInUp} className="img-rect">
-              <Image className="img-rect-image" src={philip} />
+            <motion.div variants={fadeInUp} className={` ${theme === 'light' ? 'img-rect' : 'img-rect-white'} `}>
+              <Image className="img-rect-image z-10" src={philip} />
             </motion.div>
           </div>
         </div>
@@ -103,7 +103,7 @@ const About = () => {
           {/* 1 */}
           <div className="flex mt-16 justify-between">
             <div>
-              <a className="neue-machina-ultrabold skill-size cursor-pointer  text-red-500 ">
+              <a className="neue-machina-ultrabold skill-size cursor-pointer text-red-500 ">
                 UX Research
               </a>
             </div>

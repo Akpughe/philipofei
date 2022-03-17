@@ -73,21 +73,14 @@
 
 html,
 body {
-  /* color: #000;
-  background: #fff; */
-
-  /* background-image: url('../public/img/Splines.png'); */
+  background-image: url('../public/img/Splines.png');
   background-repeat: no-repeat;
   background-size: contain;
-
-  /* background-position: right; */
 }
 
-/* [data-theme='dark'],
-[data-theme='dark'] body {
-  color: #fff;
-  background: #000;
-} */
+.bg_dark{
+  background: #101828;
+}
 
 .inp {
   outline: 0;
@@ -242,11 +235,11 @@ body {
   top: 0;
   bottom: 0;
   background-image: url('../public/img/Splines.png');
-  /* background-repeat: no-repeat;
-  background-size: contain;
+  background-repeat: repeat;
+  background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100%; */
+  /* width: 100%; */
+  /* height: 100%; */
 }
 
 .bgblack{
@@ -283,6 +276,10 @@ body {
   position: relative;
   display: inline-block;
 }
+.img-rect-white {
+  position: relative;
+  display: inline-block;
+}
 
 .img-rect-image {
   vertical-align: bottom;
@@ -296,7 +293,18 @@ body {
   border: 1px solid #606f7b;
   width: 100%;
   height: 91%;
-  z-index: -1;
+  z-index: 1;
+}
+
+.img-rect-white:after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border: 1px solid #F1F5F8;
+  width: 100%;
+  height: 91%;
+  z-index: 1;
 }
 
 .view-project {

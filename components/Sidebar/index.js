@@ -25,26 +25,26 @@ const Sidebar = ({ close }) => {
           </div>
           <div className="mt-3">
             <Link href="/work">
-              <motion.a
+              <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="neue-machina-ultrabold sidebar-menu1 dark:text-white cursor-pointer"
               >
                 {/* <a > */}
-                  Work
+                Work
                 {/* </a> */}
-              </motion.a>
+              </motion.button>
             </Link>
           </div>
           <div className="mt-5">
             <Link href="/about">
-              <motion.a
+              <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 className="neue-machina-ultrabold  sidebar-menu1 dark:text-white"
               >
-                  About me
-              </motion.a>
+                About me
+              </motion.button>
             </Link>
           </div>
           <div className="mt-6">
@@ -72,15 +72,15 @@ const Sidebar = ({ close }) => {
           </div>
           <div className="flex items-center pt-4 sidebar-socials">
             <div className="flex mr-6 text-sm airbnb-cereal-medium">
-              <a className="mr-1">Linkedin</a>{' '}
-              {theme === 'light' ? <DiagArrow /> : <DiagArrowwhite />}
-            </div>
-             <div className="flex mr-6 text-sm airbnb-cereal-medium">
-              <a className="mr-1">Behance</a>
+              <a className="mr-1 dark:text-white">Linkedin</a>{' '}
               {theme === 'light' ? <DiagArrow /> : <DiagArrowwhite />}
             </div>
             <div className="flex mr-6 text-sm airbnb-cereal-medium">
-              <a className="mr-1">Twitter</a>
+              <a className="mr-1 dark:text-white">Behance</a>
+              {theme === 'light' ? <DiagArrow /> : <DiagArrowwhite />}
+            </div>
+            <div className="flex mr-6 text-sm airbnb-cereal-medium">
+              <a className="mr-1 dark:text-white">Twitter</a>
               {theme === 'light' ? <DiagArrow /> : <DiagArrowwhite />}
             </div>
           </div>

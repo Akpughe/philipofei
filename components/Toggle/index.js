@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 
 const Toggler = () => {
+  const [isMounted, setIsMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  const switchTheme = () => {
+    if (isMounted) {
+      setTheme(theme === 'light' ? 'dark' : 'light');
+    }
+  };
 
   return (
     <button
       aria-label="Toggle Dark Mode"
       type="button"
       className="p-3 h-32 w-32 order-2 md:order-3"
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      onClick={switchTheme}
     >
       {theme === 'light' ? (
         <svg

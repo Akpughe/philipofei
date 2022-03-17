@@ -42,7 +42,9 @@ const Navbar = () => {
                 duration: 0.9,
                 stiffness: 100,
               }}
-              className="z-50 bg-white dark:bg-black sm:w-[735px] right-0 top-0 w-full h-screen fixed border dark:border-0 bg"
+              className={`z-50 ${
+                theme === 'light' ? 'bg-white' : 'bg_dark'
+              } sm:w-[735px] right-0 top-0 w-full h-screen fixed border dark:border-0 bg `}
             >
               {' '}
               <Sidebar show={show} close={handleShow} />
@@ -65,20 +67,16 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-28 sm:px-56 px-4">
         <div>
           <Link href="/">
-            <a className=" cursor-pointer">
-              {theme === 'light' ? (
-                <img
-                  src="https://res.cloudinary.com/davak/image/upload/v1647257743/philip/ofei_ewicvg.svg"
-                  className="w-150"
-                  alt="logo"
-                />
-              ) : (
-                <img
-                  src="https://res.cloudinary.com/davak/image/upload/v1647259194/philip/PHILIP_OFEI_utzaho.svg"
-                  className="w-150"
-                  alt="logo"
-                />
-              )}
+            <a className="cursor-pointer">
+              <img
+                src={
+                  theme === 'light'
+                    ? 'https://res.cloudinary.com/davak/image/upload/v1647257743/philip/ofei_ewicvg.svg'
+                    : 'https://res.cloudinary.com/davak/image/upload/v1647259194/philip/PHILIP_OFEI_utzaho.svg'
+                }
+                className="w-150"
+                alt="logo"
+              />
             </a>
           </Link>
         </div>
