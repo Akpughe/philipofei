@@ -3,8 +3,8 @@ import React from 'react';
 const Circlewhite = () => {
   return (
     <svg
-    width="38"
-    height="38"
+    width="30"
+    height="30"
     viewBox="0 0 38 38"
     fill=""
     xmlns="http://www.w3.org/2000/svg"

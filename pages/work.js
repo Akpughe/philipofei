@@ -29,38 +29,41 @@ const Work = () => {
   return (
     <Layout>
       <div className="mt-28 mb-20">
-        <h1 className="neue-machina-ultrabold text-8xl mb-10 ">vobb.io</h1>
-        <div className=" h-1 w-full bg-black dark:bg-white dark:bg-white mb-4 "></div>
+        <h1 className="neue-machina-ultrabold text-7xl mb-10 ">vobb.io</h1>
+        <div className=" h-1 w-full bg-black dark:bg-white mb-4 "></div>
+
         <div className="flex">
           <div className="mr-14">
             <h4 className="airbnb-cereal-bold font-bold">Services</h4>
-            <p className="airbnb-cereal-light text-lg ">UX {'&'} UI Design</p>
+            <p className="airbnb-cereal-light text-sm ">UX {'&'} UI Design</p>
           </div>
           <div className="mr-14">
             <h4 className="airbnb-cereal-bold font-bold">My Role</h4>
-            <p className="airbnb-cereal-light text-lg">Lead Designer</p>
+            <p className="airbnb-cereal-light text-sm">Lead Designer</p>
           </div>
           <div className="mr-14">
             <h4 className="airbnb-cereal-bold font-bold">Project Duration</h4>
-            <p className="airbnb-cereal-light text-lg">1 month</p>
+            <p className="airbnb-cereal-light text-sm">1 month</p>
           </div>
         </div>
       </div>
+
       <div className=" mb-24 ">
         <Image src={vobb} />
       </div>
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-3xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold font-size5 ls1 leading-9 text-gray-800 dark:text-white mb-2">
             Background
           </h6>
           {/* line */}
-          <div className=" h-1 w-16 bg-black dark:bg-white "></div>
+          <div className=" h-5p w-12 bg-black dark:bg-white "></div>
         </div>
       </div>
+
       <div>
-        <p className="airbnb-cereal-light text-xl leading-8 text-gray-800 dark:text-white ">
+        <p className="airbnb-cereal-light font-size6 leading-8 text-gray-800 dark:text-white ">
           The study abroad market is a growing market in Africa, most of west
           Asia and central europe. Universities are now (and have been)
           partnering with Agents to recruit students to their institutions.
@@ -91,28 +94,29 @@ const Work = () => {
           which in turn gives the sub-agents the same rights as direct agents.
         </p>
       </div>
+
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-3xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold font-size5 ls1 leading-9 text-gray-800 dark:text-white mb-2">
             Goal
           </h6>
           {/* line */}
           <div className=" h-1 w-14 bg-black dark:bg-white "></div>
         </div>
         <div>
-          <p className="airbnb-cereal-light text-xl text-gray-800 dark:text-white leading-8">
+          <p className="airbnb-cereal-light font-size6 text-gray-800 dark:text-white leading-8">
             Goal is to build a marketplace to accommodate three main players;
           </p>
-          <ul className="airbnb-cereal-light text-xl leading-8 list-decimal pl-5 pt-2 text-gray-800 dark:text-white ">
-            <li>Student</li>
-            <li>Agents</li>
-            <li>Universities</li>
+          <ul className="airbnb-cereal-light font-size6 leading-8 list-decimal pl-5 pt-2 text-gray-800 dark:text-white ">
+            <li className="-mt-2">Student</li>
+            <li className="-mt-2">Agents</li>
+            <li className="-mt-2">Universities</li>
           </ul>
 
-          <h6 className="airbnb-cereal-bold text-xl text-gray-800 dark:text-white mt-10  ">
+          <h6 className="airbnb-cereal-mdeium font-size6 text-gray-800 dark:text-white mt-10  ">
             Breakdown
           </h6>
-          <ul className="airbnb-cereal-light list-disc text-lg leading-8 pl-8 text-gray-800 dark:text-white">
+          <ul className="airbnb-cereal-light list-disc text-base leading-8 pl-8 text-gray-800 dark:text-white">
             <li>
               For Students; they will be able to find credible study abroad
               agents to work with for easy processing of their academic travels.
@@ -131,27 +135,27 @@ const Work = () => {
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-3xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl leading-9 text-gray-800 dark:text-white mb-2">
             Design process
           </h6>
           {/* line */}
           <div className=" h-1 w-16 bg-black dark:bg-white "></div>
         </div>
 
-        <div className="border border-gray-500 w-full h-425 py-5 flex justify-center ">
-          <Image src={vobbProcess} />
+        <div className="border border-gray-500 w-full h-425 flex justify-center items-center ">
+          <img src="../img/image_2.png" className=" h-72 " />
         </div>
       </div>
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-3xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl ls1 leading-9 text-gray-800 dark:text-white mb-2">
             Understanding the problem
           </h6>
           {/* line */}
           <div className=" h-1 w-16 bg-black dark:bg-white "></div>
         </div>
-        <p className="airbnb-cereal-light text-xl text-gray-800 dark:text-white leading-8">
+        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8">
           Like in the background study, the study abroad agent marketplace is
           getting very saturated, and alot is going on in that space. There’s a
           saying where i come from ‘Too many hands, spoil the soup’ (especially
@@ -160,70 +164,73 @@ const Work = () => {
           delay, and misery for both the students, credible agents and even
           Universities in some occasion.{' '}
         </p>
-        <p className="airbnb-cereal-light text-xl text-gray-800 dark:text-white leading-8 mt-4">
+        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8">
           Speaking to students and agents that are directly involved with
           universities, the problem cuts across the students not being able to
           get direct access to the main agents, because the market is saturated;
           there are so many con artist.
         </p>
-        <p className="airbnb-cereal-light text-xl text-gray-800 dark:text-white leading-8 mt-4">
+        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8">
           This always leads to;
         </p>
-        <ul className="airbnb-cereal-light text-xl leading-8 list-decimal pl-5 pt-2 text-gray-800 dark:text-white ">
-          <li>Fraud</li>
-          <li>Loss of money for students</li>
-          <li>Loss of prospects for university</li>
-          <li>Trust issues</li>
+        <ul className="airbnb-cereal-light text-base leading-8 list-disc pl-6 text-gray-800 dark:text-white ">
+          <li className="-mt-2">Fraud</li>
+          <li className="-mt-2">Loss of money for students</li>
+          <li className="-mt-2">Loss of prospects for university</li>
+          <li className="-mt-2">Trust issues</li>
         </ul>
       </div>
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-3xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-xl leading-9 text-gray-800 dark:text-white mb-2">
             User personas
           </h6>
           {/* line */}
           <div className=" h-1 w-16 bg-black dark:bg-white "></div>
         </div>
 
-        <p className="airbnb-cereal-light text-xl text-gray-800 dark:text-white leading-8 mb-12">
+        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8 mb-8">
           Speaking to different user groups, i was able to coin out these user
           personas;
         </p>
         {/* case 1 */}
-        <div className="border border-gray-500 w-full h-auto py-5 px-5 mb-8 flex sm:flex-row flex-col ">
+        <div className="border border-gray-500 w-full h-auto  mb-8 flex sm:flex-row flex-col p-5 ">
           <div>
-            <Image src={maryTaylor} />
+            <img
+              src="../img/mary_taylor.png"
+              style={{ width: '320px', height: '630px' }}
+            />
           </div>
-          <div className=" max-w-3xl px-10 ">
-            <h2 className="airbnb-cereal-medium text-3xl mb-3 ">
+          <div className=" max-w-2xl px-7">
+            <h2 className="airbnb-cereal-medium font-size4 ls2 mb-3 ">
               Mary Taylor, 17yrs
             </h2>
-            <p className="airbnb-cereal-light text-xl mb-4 text-gray-800 dark:text-white">
+            <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white mb-2">
               Undergradute
             </p>
             <hr />
-            <h6 className="airbnb-cereal-bold mt-4 text-lg leading-8">
+            <h6 className="airbnb-cereal-bold text-xs leading-8 mt-2">
               Bio ️📜
             </h6>
-            <p className="airbnb-cereal-light mt-4 mb-4 text-lg leading-8">
+            <p className="airbnb-cereal-light mb-4 text-sm leading-8">
               Mary is a teenager from Nigeria, who just finished high school,
               and due to the educational standard in Nigeria, wishes to continue
-              her graduate studies in Canada. Over the past six months she has
-              employed the services of different study abroad agents to help her
-              secure this transition of gaining admission into her dream
-              university as well as a seamless relocation processess. <br />{' '}
-              This has cost her nothing but misery, she has been swindled of her
-              money, now she has to wait for another admission window before she
-              can start the process again resulting to waste of time. <br />{' '}
-              Mary will like to have a platform where she can get direct access
-              to a pool of credible agents that has been vetted and has direct
-              access to her dream university.
+              her graduate studies in Canada. <br /> Over the past six months
+              she has employed the services of different study abroad agents to
+              help her secure this transition of gaining admission into her
+              dream university as well as a seamless relocation processess.{' '}
+              <br /> This has cost her nothing but misery, she has been swindled
+              of her money, now she has to wait for another admission window
+              before she can start the process again resulting to waste of time.{' '}
+              <br /> Mary will like to have a platform where she can get direct
+              access to a pool of credible agents that has been vetted and has
+              direct access to her dream university.
             </p>
-            <div className="flex sm:flex-row flex-col mb-8 mt-8">
-              <div>
-                <h6 className="airbnb-cereal-bold text-base">Goals 😃</h6>
-                <ul className="airbnb-cereal-light text-base leading-8 list-disc max-w-sm pl-8">
+            <div className="flex sm:flex-row flex-col mt-4">
+              <div className=" mr-10 ">
+                <h6 className="airbnb-cereal-bold text-sm">Goals 😃</h6>
+                <ul className="airbnb-cereal-light text-sm leading-8 list-disc max-w-sm pl-8">
                   <li>
                     Wants to be able to get access to more credible agents and
                     make her choice
@@ -236,10 +243,8 @@ const Work = () => {
                 </ul>
               </div>
               <div>
-                <h6 className="airbnb-cereal-bold text-base">
-                  Frustrations ☹️
-                </h6>
-                <ul className="airbnb-cereal-light text-base leading-8 list-disc max-w-sm pl-8">
+                <h6 className="airbnb-cereal-bold text-sm">Frustrations ☹️</h6>
+                <ul className="airbnb-cereal-light text-sm leading-8 list-disc max-w-sm pl-8">
                   <li>
                     Wants to be able to get access to more credible agents and
                     make her choice
@@ -256,22 +261,25 @@ const Work = () => {
         </div>
         {/* end case 1 */}
         {/* case 2 */}
-        <div className="border border-gray-500 w-full h-auto py-5 px-5 flex sm:flex-row flex-col ">
+        <div className="border border-gray-500 w-full h-auto  mb-8 flex sm:flex-row flex-col p-5 ">
           <div>
-            <Image src={christianMartin} />
+            <img
+              src="../img/christian_martin.png"
+              style={{ width: '320px', height: '630px' }}
+            />
           </div>
-          <div className=" max-w-3xl px-10 ">
-            <h2 className="airbnb-cereal-medium text-3xl mb-3 ">
+          <div className=" max-w-2xl px-7">
+            <h2 className="airbnb-cereal-medium font-size4 ls2 mb-3 ">
               Christain Martin, 27yrs
             </h2>
-            <p className="airbnb-cereal-light text-xl mb-4 text-gray-800 dark:text-white">
+            <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white mb-2">
               Study Abroad Agent
             </p>
             <hr />
-            <h6 className="airbnb-cereal-bold mt-4 text-lg leading-8">
+            <h6 className="airbnb-cereal-bold text-xs leading-8 mt-2">
               Bio ️📜
             </h6>
-            <p className="airbnb-cereal-light mt-4 mb-4 text-lg leading-8">
+            <p className="airbnb-cereal-light mb-4 text-sm leading-8">
               Christain is a lone agent based in Lagos, Nigeria. He runs a
               private business in the busy city of lagos, where due to the
               current goverment unfavourable conditions, undergraduate, graduate
@@ -284,29 +292,34 @@ const Work = () => {
               directly to these schools in the traditional way. <br /> Christain
               will like to have a trusted platform where he can showcase his
               portfolio, and be connected to more clients, as well as get direct
-              partnership with direct agents with the university codes.
+              partnership with direct agents with the university codes
             </p>
-            <div className="flex sm:flex-row flex-col mb-8 mt-8">
-              <div>
-                <h6 className="airbnb-cereal-bold text-base">Goals 😃</h6>
-                <ul className="airbnb-cereal-light text-base leading-8 list-disc max-w-sm pl-8">
+            <div className="flex sm:flex-row flex-col mt-4">
+              <div className=" mr-10 ">
+                <h6 className="airbnb-cereal-bold text-sm">Goals 😃</h6>
+                <ul className="airbnb-cereal-light text-sm leading-8 list-disc max-w-sm pl-8">
                   <li>
-                    Wants to be able to get access direct agents with university
-                    codes
+                    Wants to be able to get access to more credible agents and
+                    make her choice
                   </li>
-                  <li>Wants to be able to showcase his portfolio</li>
-                  <li>Wants to be able increase his clientele</li>
+                  <li>Wants to be able to trust these agents</li>
+                  <li>
+                    Wants to be able to access these agents on her phone or
+                    computer
+                  </li>
                 </ul>
               </div>
               <div>
-                <h6 className="airbnb-cereal-bold text-base">
-                  Frustrations ☹️
-                </h6>
-                <ul className="airbnb-cereal-light text-base leading-8 list-disc max-w-sm pl-8">
-                  <li>He is worried about fakes saturating the space</li>
+                <h6 className="airbnb-cereal-bold text-sm">Frustrations ☹️</h6>
+                <ul className="airbnb-cereal-light text-sm leading-8 list-disc max-w-sm pl-8">
                   <li>
-                    He is tired of doing things traditionally, manually and
-                    repetitive
+                    Wants to be able to get access to more credible agents and
+                    make her choice
+                  </li>
+                  <li>Wants to be able to trust these agents</li>
+                  <li>
+                    Wants to be able to access these agents on her phone or
+                    computer
                   </li>
                 </ul>
               </div>
@@ -318,23 +331,23 @@ const Work = () => {
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-3xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl ls1 leading-9 text-gray-800 dark:text-white mb-2">
             Solution
           </h6>
           {/* line */}
-          <div className=" h-1 w-16 bg-black dark:bg-white "></div>
+          <div className=" h-5p w-12 bg-black dark:bg-white "></div>
         </div>
-        <p className="airbnb-cereal-light text-xl leading-8 text-gray-800 dark:text-white ">
+        <p className="airbnb-cereal-light text-base leading-8 text-gray-800 dark:text-white ">
           After the understanding the problem and validation using these
           research methods, I start creating solutions to address these
           problems, prioritizing the earlier defined problems using the
           processes listed below.
         </p>
 
-        <p className="airbnb-cereal-bold text-lg leading-8 text-gray-800 dark:text-white mt-12">
+        <p className="airbnb-cereal-bold text-sm leading-8 text-gray-800 dark:text-white mt-12">
           How Vobbs plan to solve the problem
         </p>
-        <p className="airbnb-cereal-light text-lg leading-8 text-gray-800 dark:text-white mt-4">
+        <p className="airbnb-cereal-light text-base leading-8 text-gray-800 dark:text-white mt-4">
           Vobb is a collaborative Agents portal. <br /> Vobb allows direct
           agents to form partnerships with sub-agents, which in turn gives the
           sub-agents the same rights as direct agents. <br /> This way,
@@ -345,12 +358,12 @@ const Work = () => {
           do anything anymore.
         </p>
 
-        <div className=" border border-gray-500 w-full h-auto py-14 flex flex-col justify-center mt-12  ">
-          <div className="flex justify-center">
-            <Image src={vobbSol} />
+        <div className=" border border-gray-500 w-full h-auto flex flex-col justify-center mt-12  ">
+          <div className="flex justify-center py-14 ">
+            <img src="../img/vobb_solution.png" style={{ width: '850px' }} />
           </div>
-          <div className="flex px-20 mt-10 ">
-            <h6 className="airbnb-cereal-bold text-left text-lg leading-8 text-gray-800 dark:text-white">
+          <div className="flex pb-4">
+            <h6 className="airbnb-cereal-bold text-left text-sm leading-8 text-gray-800 dark:text-white ml-24 ">
               The pipeline
             </h6>
           </div>
@@ -358,10 +371,10 @@ const Work = () => {
       </div>
 
       <div>
-        <h6 className="airbnb-cereal-bold text-base leading-8 text-gray-800 dark:text-white mt-12">
+        <h6 className="airbnb-cereal-bold text-sm leading-8 text-gray-800 dark:text-white mt-12">
           The University
         </h6>
-        <p className="airbnb-cereal-light text-lg leading-8 text-gray-800 dark:text-white mt-4">
+        <p className="airbnb-cereal-light text-base leading-8 text-gray-800 dark:text-white mt-4">
           For agents to send applications through Vobb, there needs to be an
           integration between Vobb and the school{"'"}s existing systems. Vobb
           basically becomes a substitute to all universities existing Agent
@@ -385,10 +398,10 @@ const Work = () => {
       </div>
       {/*  */}
       <div>
-        <h6 className="airbnb-cereal-bold text-base leading-8 text-gray-800 dark:text-white mt-12">
+        <h6 className="airbnb-cereal-bold text-sm leading-8 text-gray-800 dark:text-white mt-12">
           The Agents
         </h6>
-        <p className="airbnb-cereal-light text-lg leading-8 text-gray-800 dark:text-white mt-4">
+        <p className="airbnb-cereal-light text-base leading-8 text-gray-800 dark:text-white mt-4">
           For agents to send applications through Vobb, there needs to be an
           integration between Vobb and the school{"'"}s existing systems. Vobb
           basically becomes a substitute to all universities existing Agent
@@ -413,7 +426,7 @@ const Work = () => {
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-3xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl leading-9 text-gray-800 dark:text-white mb-2">
             User flow
           </h6>
           {/* line */}
@@ -422,17 +435,17 @@ const Work = () => {
 
         <div className="flex flex-col justify-center px-10">
           <div>
-            <Image src={vobb_userflow} />
+            <img src="https://res.cloudinary.com/davak/image/upload/v1647534528/philip/image_121_z88ycv.svg" />
           </div>
           <div className="mt-6">
-            <Image src={vobb_userflow2} />
+            <img src="https://res.cloudinary.com/davak/image/upload/v1647534624/philip/image_120_yhocy1.svg" />
           </div>
         </div>
       </div>
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-3xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl leading-9 text-gray-800 dark:text-white mb-2">
             High-fidelity prototypes
           </h6>
           {/* line */}
@@ -440,7 +453,7 @@ const Work = () => {
         </div>
 
         <div>
-          <p className="airbnb-cereal-light text-xl text-gray-800 dark:text-white leading-8">
+          <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8">
             Due to the short time frame of delivering the product, we went from
             Mid-fi{'’'}s to high-fi{'’'}s
           </p>
@@ -448,7 +461,7 @@ const Work = () => {
 
         <div>
           <div className="mt-16 mb-10">
-            <h6 className="airbnb-cereal-bold text-2xl text-gray-800 dark:text-white leading-8">
+            <h6 className="airbnb-cereal-bold text-xl ls2 text-gray-800 dark:text-white leading-8">
               Style guide
             </h6>
           </div>
@@ -459,7 +472,7 @@ const Work = () => {
 
         <div>
           <div className="mt-16 mb-10">
-            <h6 className="airbnb-cereal-bold text-2xl text-gray-800 dark:text-white leading-8">
+            <h6 className="airbnb-cereal-bold text-xl ls2 text-gray-800 dark:text-white leading-8">
               Landing page
             </h6>
           </div>
@@ -470,7 +483,7 @@ const Work = () => {
 
         <div>
           <div className="mt-16 mb-10">
-            <h6 className="airbnb-cereal-bold text-2xl text-gray-800 dark:text-white leading-8">
+            <h6 className="airbnb-cereal-bold text-xl ls2 text-gray-800 dark:text-white leading-8">
               Authentication
             </h6>
           </div>
@@ -481,7 +494,7 @@ const Work = () => {
 
         <div>
           <div className="mt-16 mb-10">
-            <h6 className="airbnb-cereal-bold text-2xl text-gray-800 dark:text-white leading-8">
+            <h6 className="airbnb-cereal-bold text-xl ls2 text-gray-800 dark:text-white leading-8">
               Components
             </h6>
           </div>
@@ -492,7 +505,7 @@ const Work = () => {
 
         <div>
           <div className="mt-16 mb-10">
-            <h6 className="airbnb-cereal-bold text-2xl text-gray-800 dark:text-white leading-8">
+            <h6 className="airbnb-cereal-bold text-xl ls2 text-gray-800 dark:text-white leading-8">
               Student Dashboard
             </h6>
           </div>
@@ -503,7 +516,7 @@ const Work = () => {
 
         <div>
           <div className="mt-16 mb-10">
-            <h6 className="airbnb-cereal-bold text-2xl text-gray-800 dark:text-white leading-8">
+            <h6 className="airbnb-cereal-bold text-xl ls2 text-gray-800 dark:text-white leading-8">
               Agent dashboard
             </h6>
           </div>
@@ -514,7 +527,7 @@ const Work = () => {
 
         <div>
           <div className="mt-16 mb-10">
-            <h6 className="airbnb-cereal-bold text-2xl text-gray-800 dark:text-white leading-8">
+            <h6 className="airbnb-cereal-bold text-xl ls2 text-gray-800 dark:text-white leading-8">
               Mobile responsiveness
             </h6>
           </div>
@@ -526,14 +539,14 @@ const Work = () => {
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-3xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl ls1 leading-9 text-gray-800 dark:text-white mb-2">
             Conclusion
           </h6>
           {/* line */}
           <div className=" h-1 w-16 bg-black dark:bg-white "></div>
         </div>
 
-        <p className="airbnb-cereal-light text-xl text-gray-800 dark:text-white leading-8">
+        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8">
           I love beign a designer because it allows me to explore different
           perspective of people{'’'}s lives, understanding their challenges,
           frustrations and in the long run be able to provide solutions and make
@@ -554,8 +567,8 @@ const Work = () => {
 
       <div className="mt-32">
         <Link href={''}>
-          <a className="view-project neue-machina-ultrabold bg-black dark:bg-white text-white py-6 px-20 cursor-pointer">
-            <p className="flex text-white dark:text-black">
+          <a className="view-project neue-machina-ultrabold bg-black dark:bg-white text-white py-5 px-10 cursor-pointer">
+            <p className="flex text-white text-lg dark:text-black">
               View next project{' '}
               <i className="ml-3">
                 {theme === 'light' ? <CircleArrow /> : <CricleArrowwhite />}

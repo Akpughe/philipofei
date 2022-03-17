@@ -14,73 +14,73 @@ const Sidebar = ({ close }) => {
   return (
     <>
       <div className="">
-        <div className="flex justify-end pt-16 pr-24 pb-16 cursor-pointer">
+        <div className="flex justify-end pt-14 pr-24 pb-8 cursor-pointer">
           <div onClick={close}>
             {theme === 'dark' ? <Closewhite /> : <Close />}
           </div>
         </div>
-        <div className=" pl-36 ">
+        <div className=" pl-24 ">
           <div>
-            <p className="airbnb-cereal-medium text-lg text-gray-400 ">Menu</p>
+            <p className="airbnb-cereal-medium text-sm text-gray-400 ">Menu</p>
           </div>
-          <div className=" h-16 pt-7 ">
+          <div className="mt-3">
             <Link href="/work">
-              <motion.button
+              <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
+                className="neue-machina-ultrabold sidebar-menu1 dark:text-white cursor-pointer"
               >
-                <a className="neue-machina-ultrabold text-5xl text-gray-700 dark:text-white cursor-pointer">
+                {/* <a > */}
                   Work
-                </a>
-              </motion.button>
+                {/* </a> */}
+              </motion.a>
             </Link>
           </div>
-          <div className=" h-16 pt-16 pb-4 ">
+          <div className="mt-5">
             <Link href="/about">
-              <motion.button
+              <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
+                className="neue-machina-ultrabold  sidebar-menu1 dark:text-white"
               >
-                <a className="neue-machina-ultrabold text-5xl text-gray-700 dark:text-white">
                   About me
-                </a>
-              </motion.button>
+              </motion.a>
             </Link>
           </div>
-          <div className=" h-16 pt-20 pb-4 ">
+          <div className="mt-6">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
               <Link href="/contact">
-                <a className="neue-machina-ultrabold text-5xl text-gray-700 dark:text-white">
+                <a className="neue-machina-ultrabold sidebar-menu1 dark:text-white">
                   Contact me
                 </a>
               </Link>
             </motion.button>
           </div>
         </div>
-        <div className="pl-36 absolute bottom-0 pb-10">
+        <div className="pl-24 absolute bottom-0 pb-6">
           <div>
-            <p className="airbnb-cereal-medium text-lg text-gray-400 dark:text-white ">
+            <p className="airbnb-cereal-medium text-sm sidebar-git dark:text-white mb-2 ">
               Get in touch
             </p>
-            <h2 className="neue-machina-ultrabold text-3xl text-gray-700 dark:text-white pt-1 pb-2">
+            <h2 className="neue-machina-ultrabold text-2xl sidebar-menu1 dark:text-white  pb-1">
               philipofei042@gmail.com
             </h2>
             <div className="sidebar-line h-0 w-full bg-black "></div>
           </div>
-          <div className="flex items-center pt-8">
-            <div className="flex mr-1">
-              <a className="mr-1">LinkedIn</a>{' '}
+          <div className="flex items-center pt-4 sidebar-socials">
+            <div className="flex mr-6 text-sm airbnb-cereal-medium">
+              <a className="mr-1">Linkedin</a>{' '}
               {theme === 'light' ? <DiagArrow /> : <DiagArrowwhite />}
             </div>
-            <div className="flex mr-1">
-              <a className="mr-1">Twitter</a>
-              {theme === 'light' ? <DiagArrow /> : <DiagArrowwhite />}
-            </div>
-            <div className="flex mr-1">
+             <div className="flex mr-6 text-sm airbnb-cereal-medium">
               <a className="mr-1">Behance</a>
+              {theme === 'light' ? <DiagArrow /> : <DiagArrowwhite />}
+            </div>
+            <div className="flex mr-6 text-sm airbnb-cereal-medium">
+              <a className="mr-1">Twitter</a>
               {theme === 'light' ? <DiagArrow /> : <DiagArrowwhite />}
             </div>
           </div>

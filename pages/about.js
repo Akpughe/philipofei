@@ -45,23 +45,23 @@ const About = () => {
   return (
     <Layout>
       <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
-        <div className="flex pt-32">
+        <div className="flex pt-24 ">
           <div className="flex-1">
             {/* head */}
             <div>
               <motion.h1
                 variants={fadeInUp}
-                className="neue-machina-ultrabold font-extrabold dark:text-white text-7xl pb-2"
+                className="neue-machina-ultrabold font-extrabold dark:text-white font-size1 pb-2"
               >
-                About me.
+                About me .
               </motion.h1>
             </div>
             {/* paragraph */}
             <div>
               <motion.p
                 variants={fadeInUp}
-                className="airbnb-cereal-medium text-xl text-gray-400 dark:text-white"
-                style={{ lineHeight: '48px', width: '750px' }}
+                className="airbnb-cereal-medium about_p text-gray-400 dark:text-white"
+                // style={{ lineHeight: '48px', width: '750px' }}
               >
                 I am Philip Olorunfemi Ofei, a Software product designer whose
                 focus is to create seamless user experience and beautiful
@@ -78,26 +78,26 @@ const About = () => {
             </div>
           </div>
           {/* image */}
-          <div className="flex justify-center flex-1 px-4 ">
+          <div className="sm:flex hidden justify-center flex-1 px-4 -mt-4 ">
             <motion.div variants={fadeInUp} className="img-rect">
               <Image className="img-rect-image" src={philip} />
             </motion.div>
           </div>
         </div>
-        <div className="pt-10 pb-32">
+        <div className="pt-12 pb-32">
           <div className="flex items-center">
-            <span className="airbnb-cereal-medium font-bold text-lg mr-2 dark:text-white">
+            <span className="airbnb-cereal-medium font-bold text-sm mr-2 dark:text-white">
               More about me
             </span>
             <BounceArrow />
           </div>
         </div>
         <div className=" mt-20 ">
-          <h6 className="airbnb-cereal-medium text-2xl leading-9 text-gray-400 dark:text-white mb-2">
+          <h6 className="airbnb-cereal-medium text-xl leading-9 sidebar-git dark:text-white mb-2">
             Skills Highlight ✨.
           </h6>
           {/* line */}
-          <div className=" h-1 w-16 bg-black dark:bg-white "></div>
+          <div className=" h-5p w-11 bgblack dark:bg-white "></div>
         </div>
         <div className="pb-32">
           {/* 1 */}
@@ -111,7 +111,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 Design thinking
               </a>
@@ -120,7 +120,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 UI Design
               </a>
@@ -129,7 +129,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size  cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size  cursor-pointer  dark:text-white "
               >
                 Scrum
               </a>
@@ -141,7 +141,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 Communication
               </a>
@@ -150,7 +150,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 Information Architecture
               </a>
@@ -159,7 +159,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 Agile
               </a>
@@ -171,7 +171,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 User Testing
               </a>
@@ -180,7 +180,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 Interaction Design
               </a>
@@ -189,7 +189,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 Wireframing
               </a>
@@ -201,7 +201,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 Design Sprint
               </a>
@@ -210,7 +210,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 Customer Journey Map
               </a>
@@ -219,7 +219,7 @@ const About = () => {
               <a
                 onMouseEnter={changeColor}
                 onMouseLeave={changeBack}
-                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white text-gray-500 dark:text-white "
+                className="neue-machina-ultrabold skill-size cursor-pointer  dark:text-white "
               >
                 Empathy
               </a>
@@ -227,119 +227,145 @@ const About = () => {
           </div>
         </div>
         {/*  */}
-        <div className=" mt-20 ">
-          <h6 className="airbnb-cereal-medium text-2xl leading-9  dark:text-whitetext-gray-400 mb-2">
+        <div className="">
+          <h6 className="airbnb-cereal-medium text-xl leading-9  dark:text-white sidebar-git mb-2">
             Tools ⚙️.
           </h6>
           {/* line */}
-          <div className=" h-1 w-10 bg-black dark:bg-white "></div>
+          <div className=" h-5p w-8 bgblack dark:bg-white "></div>
         </div>
         {/*  */}
         <div className="flex justify-center mb-10 mt-10">
           {/* begin */}
-          <div className="flex flex-col h-full items-center relative w-14 space-y-10">
+          <div className="flex flex-col h-full items-center relative w-14 space-y-10 circ">
             <div
               className={`${
                 theme === 'light' ? 'block-line' : 'block-line-white'
               } w-px h-full absolute`}
             ></div>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => {
-              return (
-                <div key={i} className="">
-                  {theme === 'light' ? <Circle /> : <Circlewhite />}
-                  {/* <Circle /> */}
-                </div>
-              );
-            })}
+
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="mb-4">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
           </div>
           {/* end */}
           {/* new */}
-          <div className=" h-full pt-10 pl-12 space-y-12 pb-32  ">
+          <div className=" h-full pt-10 pl-8 pb-32  ">
             {' '}
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white text-xl">
               {' '}
               Figma{' '}
             </p>{' '}
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl ">
+            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt12 ">
               {' '}
               Adobe XD{' '}
             </p>{' '}
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt12">
               Adobe illustration
             </p>
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt12">
               Adobe Photoshop
             </p>
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white  dark:text-white text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt24">
               Framer
             </p>
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white h-5 dark:text-white text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white h-5 text-xl mt24">
               Google Services
             </p>
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt33">
               Miro
             </p>
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white   text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt25">
               Whimsical
             </p>
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt26">
               Lookback
             </p>
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt12">
               Notion
             </p>
-            <p className="neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white h-5 text-2xl">
+            <p className="neue-machina-ultrabold devby dark:text-white h-5 text-xl mt25">
               Jira
             </p>
           </div>
           {/* new end */}
         </div>
         {/*  */}
-        <div className=" mt-20 ">
-          <h6 className="airbnb-cereal-medium text-2xl leading-9 text-gray-400 dark:text-white mb-2">
+        <div className="">
+          <h6 className="airbnb-cereal-medium text-xl leading-9 text-gray-400 dark:text-white mb-2">
             Experience 💻️.
           </h6>
           {/* line */}
-          <div className=" h-1 w-20 bg-black dark:bg-white "></div>
+          <div className=" h-5p w-16 bg-black dark:bg-white "></div>
         </div>
         {/* experience */}
         <div className="flex mb-10 mt-10">
           {/* b  */}
           <div className=" h-full pt-10 pr-10 ">
             {' '}
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white text-2xl space1 ">
+            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white text-xl space1 ">
               {' '}
               Medsaf Disrupt Pharmacy{' '}
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
             </p>{' '}
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2  ">
+            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2  ">
               {' '}
               Parthian Partners (i-invest){' '}
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
             </p>{' '}
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2 ">
+            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2i ">
               KUPLR
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
             </p>
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2 ">
+            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2e ">
               Yudimy
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
             </p>
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white  text-2xl space2s ">
+            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2s ">
               VOBBS
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
             </p>
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white dark:text-white text-2xl ">
+            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white text-xl ">
               <div>
                 AFREAL{' '}
                 <small className="text-xs">
@@ -366,13 +392,13 @@ const About = () => {
             <div className="circle-mb1 mt-10">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="circle-mb1 mt-10">
+            <div className="circle-mb1i mt-10">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="circle-mb1 mt-10">
+            <div className="circle-mb1e mt-10">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="circle-mb1 mt-10">
+            <div className="circle-mb1s mt-10">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
             <div className="mt-10 mb-36">
@@ -384,12 +410,12 @@ const About = () => {
           {/* new */}
           <div className=" h-full pt-10 pl-12 pb-32  ">
             {' '}
-            <div className=" mb-32 ">
-              <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+            <div className=" mb-16 ">
+              <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 UX {'&'} UI Designer (Remote){' '}
               </p>{' '}
-              <ul className="airbnb-cereal-medium text-base text-gray-500 dark:text-white pl-5 pt-5 max-w-xl  list-disc">
+              <ul className="airbnb-cereal-medium text-sm grey1 dark:text-white pl-5 pt-5 max-w-xl  list-disc">
                 <li className="pb-4">
                   Medsaf is a medical tech firm backed by Crunchbase.
                 </li>
@@ -421,11 +447,11 @@ const About = () => {
               </ul>
             </div>
             <div className=" margin-b ">
-              <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+              <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 UX {'&'} UI Designer{' '}
               </p>{' '}
-              <ul className="airbnb-cereal-medium text-base text-gray-500 dark:text-white pl-5 pt-5 max-w-xl  list-disc">
+              <ul className="airbnb-cereal-medium text-sm grey1 dark:text-white pl-5 pt-5 max-w-xl  list-disc">
                 <li className="pb-4">
                   i-invest is Nigeria{'’'}s foremost digital platform for
                   Treasury Bills, and now the preferred financial services
@@ -447,11 +473,11 @@ const About = () => {
               </ul>
             </div>
             <div className="margin-b3">
-              <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+              <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 Lead Product Designer (Contract)
               </p>{' '}
-              <ul className="airbnb-cereal-medium text-base text-gray-500 dark:text-white pl-5 max-w-xl pt-5  list-disc">
+              <ul className="airbnb-cereal-medium text-sm grey1 dark:text-white pl-5 max-w-xl pt-5  list-disc">
                 <li className="pb-4">
                   At Kuplr, I led all product design efforts, managed a small
                   remote design team
@@ -467,11 +493,11 @@ const About = () => {
               </ul>
             </div>
             <div className="margin-b4">
-              <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+              <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 Product Designer
               </p>{' '}
-              <ul className="airbnb-cereal-medium text-base text-gray-500 dark:text-white pl-5 max-w-xl pt-5  list-disc">
+              <ul className="airbnb-cereal-medium text-sm grey1 dark:text-white pl-5 max-w-xl pt-5  list-disc">
                 <li className="pb-4">
                   At Yudimy, i worked on clarity.yudimy.com, a psychometric web
                   app that helps individuals and organizations to be happily
@@ -489,11 +515,11 @@ const About = () => {
               </ul>
             </div>
             <div className="margin-b5">
-              <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+              <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 UX {'&'} UI Designer (Contract){' '}
               </p>{' '}
-              <ul className="airbnb-cereal-medium text-base text-gray-500 dark:text-white pl-5 max-w-xl pt-5  list-disc">
+              <ul className="airbnb-cereal-medium text-sm grey1 dark:text-white pl-5 max-w-xl pt-5  list-disc">
                 <li className="pb-4">
                   Vobbs is an international platform based in the UK helping
                   students find credible abroad study agents
@@ -509,11 +535,11 @@ const About = () => {
               </ul>
             </div>
             <div>
-              <p className="neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+              <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 UX {'&'} UI Designer (Contract){' '}
               </p>{' '}
-              <ul className="airbnb-cereal-medium text-base text-gray-500 dark:text-white pl-5 max-w-xl pt-5  list-disc">
+              <ul className="airbnb-cereal-medium text-sm grey1 dark:text-white pl-5 max-w-xl pt-5  list-disc">
                 <li className="pb-4">
                   Afreal is a real estate platform using innovative technology
                   to solve real estate problems for Nigerians
@@ -531,11 +557,11 @@ const About = () => {
         </div>
         {/* education */}
         <div className=" mt-20 ">
-          <h6 className="airbnb-cereal-medium text-2xl leading-9 text-gray-400 dark:text-white mb-2">
+          <h6 className="airbnb-cereal-medium text-xl leading-9 text-gray-400 dark:text-white mb-2">
             Education {'&'} Certifications 💻️.
           </h6>
           {/* line */}
-          <div className=" h-1 w-10 bg-black dark:bg-white "></div>
+          <div className=" h-5p w-14 bg-black dark:bg-white "></div>
         </div>
         {/*  */}
         <div className="flex justify-center mb-10 mt-10 ml-10">
@@ -546,16 +572,16 @@ const About = () => {
               } block-line w-px h-full absolute  `}
             ></div>
 
-            <div className="mb-20 mt-12">
+            <div className="mb-20 mt-8">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
             <div className="mb-20">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="mb-20">
+            <div className="mb-24">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="mb-20">
+            <div className="mb85">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
             <div className="mb-20">
@@ -563,35 +589,35 @@ const About = () => {
             </div>
           </div>
 
-          <div className=" h-full max-w-xs pl-4 pb-32 pt-9 ">
+          <div className=" h-full max-w-xs pl-4 pb-32 pt-5 ">
             {' '}
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14 mt-4">
+            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white text-xl mb_14 mt-4">
               {' '}
               Google{' '}
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 UX Design - 2022
               </span>
             </p>{' '}
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14 ">
+            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white text-xl mb_14i ">
               {' '}
               Udemy{' '}
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 Learn Jira Real world examples - 2021
               </span>
             </p>{' '}
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14">
+            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-xl mb-14">
               Product school
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 Product Masterclass : How to build digital products - 2020
               </span>
             </p>
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl mb-14">
+            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-xl mb-14">
               Udacity
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 User Experience Design Nano Degree - 2020
               </span>
             </p>
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-2xl">
+            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-xl">
               University of Abuja
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 B.Sc. PHYSICS - 2015

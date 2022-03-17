@@ -7,7 +7,6 @@ import invest from '../public/img/invest.png';
 import { motion } from 'framer-motion';
 
 export default function Home() {
-
   // Our custom easing
   let easing = [0.6, -0.05, 0.01, 0.99];
 
@@ -28,22 +27,27 @@ export default function Home() {
     },
   };
 
-
   return (
     <>
       <Layout>
         <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
-          <div className=" mt-36 ">
-            <div className="py-20">
-                <motion.h1 variants={fadeInUp} className="neue-machina-ultrabold dark:text-white font-extrabold text-7xl ">
-                  Hey 👋🏽, I’m Philip .
-                </motion.h1>
+          <div className="mt125">
+            <div className="mb-10">
+              <motion.h1
+                variants={fadeInUp}
+                className="neue-machina-ultrabold black1 dark:text-white font-size1 "
+              >
+                Hey 👋🏽, I’m Philip .
+              </motion.h1>
             </div>
             {/* line */}
-            <motion.div variants={fadeInUp} className=" h-1 w-full bg-black dark:bg-white "></motion.div>
+            <motion.div
+              variants={fadeInUp}
+              className=" h-5p w-full bg-black dark:bg-white "
+            ></motion.div>
             {/* end line */}
-            <motion.div variants={fadeInUp} className="py-10">
-              <p className="airbnb-cereal-medium text-gray-400 dark:text-white text-2xl leading-loose w-2/3">
+            <motion.div variants={fadeInUp} className="py-8">
+              <p className="airbnb-cereal-medium grey1 dark:text-white font-size2 leading-loose max-w-850 ">
                 I am a curious digital product designer and tech enthusiast, who
                 has made this curiosity the core of my experience. I am trying
                 to find out why we (users) do what we do and why we take certain
@@ -57,7 +61,7 @@ export default function Home() {
             </motion.div>
             <div className="pt-0 pb-16">
               <div className="flex items-center">
-                <span className="airbnb-cereal-medium font-bold  dark:text-white text-lg mr-2">
+                <span className="airbnb-cereal-medium font-bold  dark:text-white text-sm mr-2">
                   Selected Projects
                 </span>
                 <BounceArrow />
@@ -65,24 +69,49 @@ export default function Home() {
             </div>
             {/* images */}
             <div>
-              <Image src={vobb} />
+              {/* <Image
+                src={vobb}
+              /> */}
+              <img
+                src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg"
+                alt=""
+              />
               <div className="py-8">
-                <h1 className="neue-machina-ultrabold font-black text-3xl pb-3">
+                <h1 className="neue-machina-ultrabold font-black font-size4">
                   VOBB
                 </h1>
-                <p className="airbnb-cereal-medium text-lg text-gray-600 dark:text-white">
+                <p className="airbnb-cereal-medium kow dark:text-white">
                   UX {'&'} UI Design
                 </p>
               </div>
             </div>
             <div className=" pt-14 ">
-              <Image src={invest} />
+              {/* <Image src={invest} /> */}
+              <img
+                src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
+                alt=""
+              />
               <div className="py-8">
-                <h1 className="neue-machina-ultrabold font-black text-3xl dark:text-white pb-3">
+                <h1 className="neue-machina-ultrabold font-black font-size4 dark:text-white pb-0">
                   i-invest
                 </h1>
-                <p className="airbnb-cereal-medium text-lg text-gray-600 dark:text-white">
+                <p className="airbnb-cereal-medium kow dark:text-white">
                   Product Design
+                </p>
+              </div>
+            </div>
+            <div className=" pt-14 ">
+              {/* <Image src={invest} /> */}
+              <img
+                src="https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg"
+                alt=""
+              />
+              <div className="py-8">
+                <h1 className="neue-machina-ultrabold font-black font-size4 dark:text-white">
+                  Afreal one
+                </h1>
+                <p className="airbnb-cereal-medium kow dark:text-white">
+                  UX {'&'} UI Design
                 </p>
               </div>
             </div>
