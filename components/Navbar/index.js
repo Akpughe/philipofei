@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import Menu from '../../icons/Menu';
 import Sidebar from '../Sidebar';
 import Link from 'next/link';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, useCycle } from 'framer-motion';
 import { useTheme } from 'next-themes';
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  const [open, cycleOpen] = useCycle(false, true);
 
   const handleShow = (event) => {
     setShow(!show);
@@ -22,10 +24,24 @@ const Navbar = () => {
               animate={{
                 x: 0,
               }}
+              // exit={{
+              //   x: '100%',
+              // }}
               exit={{
-                x: '100%',
+                width: 0,
+                transition: {
+                  type: 'spring',
+                  bounce: 0.4,
+                  duration: 0.9,
+                  stiffness: 100,
+                },
               }}
-              transition={{ type: 'spring', bounce: 0, duration: 0.4 }}
+              transition={{
+                type: 'spring',
+                bounce: 0.4,
+                duration: 0.9,
+                stiffness: 100,
+              }}
               className="z-50 bg-white dark:bg-black sm:w-[735px] right-0 top-0 w-full h-screen fixed border dark:border-0 bg"
             >
               {' '}
