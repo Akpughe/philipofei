@@ -73,7 +73,7 @@
 
 html,
 body {
-  background-image: url('../public/img/Splines7.png');
+  /* background-image: url('../public/img/Splines7.png'); */
   background-repeat: no-repeat;
   background-size: contain;
 }
