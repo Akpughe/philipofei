@@ -12,7 +12,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'nature-light': "url('/img/Splines2.png')",
+        'nature-light': "url('/img/Splines1.png')",
         'nature-dark': "url('/img/Splines7.png')",
       },
     },

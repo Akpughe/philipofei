@@ -12,16 +12,16 @@ const DiagArrowwhite = () => {
       <path
         d="M5.83325 14.6673L14.1666 6.33398"
         stroke="#DAE1E7"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5.83325 6.33398H14.1666V14.6673"
         stroke="#DAE1E7"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

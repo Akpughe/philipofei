@@ -12,16 +12,16 @@ const RightArrowwhite = () => {
       <path
         d="M4.66669 10.5L16.3334 10.5"
         stroke="#F8FAFC"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M10.5 4.66732L16.3333 10.5007L10.5 16.334"
         stroke="#F8FAFC"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

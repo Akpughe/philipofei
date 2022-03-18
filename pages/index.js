@@ -2,8 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import BounceArrow from '../icons/BounceArrow';
-import vobb from '../public/img/vobb.png';
-import invest from '../public/img/invest.png';
 import { motion } from 'framer-motion';
 
 export default function Home() {

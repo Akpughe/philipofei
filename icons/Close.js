@@ -15,7 +15,7 @@ const Close = () => {
         x2="25.3345"
         y2="23.9203"
         stroke="#344054"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <line
         x1="1.29289"
@@ -23,7 +23,7 @@ const Close = () => {
         x2="23.9203"
         y2="1.66548"
         stroke="#344054"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </svg>
   );

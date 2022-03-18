@@ -15,16 +15,16 @@ const BounceArrow = () => {
       <path
         d="M10 4.6665V16.3332"
         stroke={theme === 'light' ? "#101828" : "#fff"}
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15.8332 10.5L9.99984 16.3333L4.1665 10.5"
         stroke={theme === 'light' ? "#101828" : "#fff"}
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
