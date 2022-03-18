@@ -59,7 +59,11 @@ const Contact = () => {
             </div>
 
             <div className="mt-28">
-              <a className="view-project neue-machina-ultrabold bg-black dark:bg-white text-white py-6 px-16 cursor-pointer">
+              <a
+                className={`${
+                  theme === 'light' ? 'view-project' : 'view-project-white'
+                } neue-machina-ultrabold bg-black dark:bg-white text-white py-6 px-16 cursor-pointer`}
+              >
                 <p className="flex text-white dark:text-black">
                   Send message{' '}
                   <i className="ml-3">

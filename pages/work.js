@@ -49,7 +49,7 @@ const Work = () => {
       </div>
 
       <div className=" mb-24 ">
-        <img src='../img/vobb.png' />
+        <img src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg" />
       </div>
 
       <div>
@@ -63,7 +63,7 @@ const Work = () => {
       </div>
 
       <div>
-        <p className="airbnb-cereal-light font-size6 leading-8 text-gray-800 dark:text-white ">
+        <p className="airbnb-cereal-light text-base leading-8 text-gray-800 dark:text-white ">
           The study abroad market is a growing market in Africa, most of west
           Asia and central europe. Universities are now (and have been)
           partnering with Agents to recruit students to their institutions.
@@ -101,13 +101,13 @@ const Work = () => {
             Goal
           </h6>
           {/* line */}
-          <div className=" h-1 w-14 bg-black dark:bg-white "></div>
+          <div className=" h-1 w-12 bg-black dark:bg-white "></div>
         </div>
         <div>
-          <p className="airbnb-cereal-light font-size6 text-gray-800 dark:text-white leading-8">
+          <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8">
             Goal is to build a marketplace to accommodate three main players;
           </p>
-          <ul className="airbnb-cereal-light font-size6 leading-8 list-decimal pl-5 pt-2 text-gray-800 dark:text-white ">
+          <ul className="airbnb-cereal-light text-base leading-8 list-decimal pl-5 pt-2 text-gray-800 dark:text-white ">
             <li className="-mt-2">Student</li>
             <li className="-mt-2">Agents</li>
             <li className="-mt-2">Universities</li>
@@ -116,16 +116,16 @@ const Work = () => {
           <h6 className="airbnb-cereal-mdeium font-size6 text-gray-800 dark:text-white mt-10  ">
             Breakdown
           </h6>
-          <ul className="airbnb-cereal-light list-disc text-base leading-8 pl-8 text-gray-800 dark:text-white">
-            <li>
+          <ul className="airbnb-cereal-light  text-base leading-7 pl-8 text-gray-800 dark:text-white">
+            <li className='li'>
               For Students; they will be able to find credible study abroad
               agents to work with for easy processing of their academic travels.
             </li>
-            <li>
+            <li className='li'>
               For agents; it goes a little deeper than that, Agents can get
               students through Vobb and also showcase their portfolio.
             </li>
-            <li>
+            <li className='li'>
               Think about it as Behance is to designers and Github is to
               developers, Vobb will be to small scale “Travel agencies”
             </li>
@@ -135,15 +135,15 @@ const Work = () => {
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-2xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl leading-9 ls1 text-gray-800 dark:text-white mb-2">
             Design process
           </h6>
           {/* line */}
-          <div className=" h-1 w-16 bg-black dark:bg-white "></div>
+          <div className=" h-5p w-14 bg-black dark:bg-white "></div>
         </div>
 
         <div className="border border-gray-500 w-full h-425 flex justify-center items-center ">
-          <img src="../img/image_2.png" className=" h-72 " />
+          <img src="https://res.cloudinary.com/davak/image/upload/v1647608696/philip/image_2_exyklt.png" className=" h-72 " />
         </div>
       </div>
 
@@ -153,9 +153,9 @@ const Work = () => {
             Understanding the problem
           </h6>
           {/* line */}
-          <div className=" h-1 w-16 bg-black dark:bg-white "></div>
+          <div className=" h-5p w-12 bg-black dark:bg-white "></div>
         </div>
-        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8">
+        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-7">
           Like in the background study, the study abroad agent marketplace is
           getting very saturated, and alot is going on in that space. There’s a
           saying where i come from ‘Too many hands, spoil the soup’ (especially
@@ -164,30 +164,30 @@ const Work = () => {
           delay, and misery for both the students, credible agents and even
           Universities in some occasion.{' '}
         </p>
-        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8">
+        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-7">
           Speaking to students and agents that are directly involved with
           universities, the problem cuts across the students not being able to
           get direct access to the main agents, because the market is saturated;
           there are so many con artist.
         </p>
-        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8">
+        <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-7">
           This always leads to;
         </p>
-        <ul className="airbnb-cereal-light text-base leading-8 list-disc pl-6 text-gray-800 dark:text-white ">
-          <li className="-mt-2">Fraud</li>
-          <li className="-mt-2">Loss of money for students</li>
-          <li className="-mt-2">Loss of prospects for university</li>
-          <li className="-mt-2">Trust issues</li>
+        <ul className="airbnb-cereal-light text-base leading-7  pl-6 text-gray-800 dark:text-white ">
+          <li className="-mt-1 li">Fraud</li>
+          <li className="-mt-1 li">Loss of money for students</li>
+          <li className="-mt-1 li">Loss of prospects for university</li>
+          <li className="-mt-1 li">Trust issues</li>
         </ul>
       </div>
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl ls1 leading-9 text-gray-800 dark:text-white mb-2">
             User personas
           </h6>
           {/* line */}
-          <div className=" h-1 w-16 bg-black dark:bg-white "></div>
+          <div className=" h-5p w-14 bg-black dark:bg-white "></div>
         </div>
 
         <p className="airbnb-cereal-light text-base text-gray-800 dark:text-white leading-8 mb-8">
@@ -198,7 +198,7 @@ const Work = () => {
         <div className="border border-gray-500 w-full h-auto  mb-8 flex sm:flex-row flex-col p-5 ">
           <div>
             <img
-              src="../img/mary_taylor.png"
+              src="https://res.cloudinary.com/davak/image/upload/v1647608714/philip/mary_taylor_qhklif.png"
               style={{ width: '320px', height: '630px' }}
             />
           </div>
@@ -229,28 +229,28 @@ const Work = () => {
             </p>
             <div className="flex sm:flex-row flex-col mt-4">
               <div className=" mr-10 ">
-                <h6 className="airbnb-cereal-bold text-sm">Goals 😃</h6>
-                <ul className="airbnb-cereal-light text-sm leading-8 list-disc max-w-sm pl-8">
-                  <li>
+                <h6 className="airbnb-cereal-bold text-xs">Goals 😃</h6>
+                <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8">
+                  <li className="li">
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li>Wants to be able to trust these agents</li>
-                  <li>
+                  <li className="li">Wants to be able to trust these agents</li>
+                  <li className="li">
                     Wants to be able to access these agents on her phone or
                     computer
                   </li>
                 </ul>
               </div>
               <div>
-                <h6 className="airbnb-cereal-bold text-sm">Frustrations ☹️</h6>
-                <ul className="airbnb-cereal-light text-sm leading-8 list-disc max-w-sm pl-8">
-                  <li>
+                <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
+                <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8">
+                  <li className="li">
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li>Wants to be able to trust these agents</li>
-                  <li>
+                  <li className="li">Wants to be able to trust these agents</li>
+                  <li className="li">
                     Wants to be able to access these agents on her phone or
                     computer
                   </li>
@@ -264,8 +264,8 @@ const Work = () => {
         <div className="border border-gray-500 w-full h-auto  mb-8 flex sm:flex-row flex-col p-5 ">
           <div>
             <img
-              src="../img/christian_martin.png"
-              style={{ width: '320px', height: '630px' }}
+              src="https://res.cloudinary.com/davak/image/upload/v1647608718/philip/christian_martin_bofsan.png"
+              style={{ width: '360px', height: '630px' }}
             />
           </div>
           <div className=" max-w-2xl px-7">
@@ -296,28 +296,28 @@ const Work = () => {
             </p>
             <div className="flex sm:flex-row flex-col mt-4">
               <div className=" mr-10 ">
-                <h6 className="airbnb-cereal-bold text-sm">Goals 😃</h6>
-                <ul className="airbnb-cereal-light text-sm leading-8 list-disc max-w-sm pl-8">
-                  <li>
+                <h6 className="airbnb-cereal-bold text-xs">Goals 😃</h6>
+                <ul className="airbnb-cereal-light text-sm leading-7 pl-6 max-w-sm">
+                  <li className="li">
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li>Wants to be able to trust these agents</li>
-                  <li>
+                  <li className="li">Wants to be able to trust these agents</li>
+                  <li className="li">
                     Wants to be able to access these agents on her phone or
                     computer
                   </li>
                 </ul>
               </div>
               <div>
-                <h6 className="airbnb-cereal-bold text-sm">Frustrations ☹️</h6>
-                <ul className="airbnb-cereal-light text-sm leading-8 list-disc max-w-sm pl-8">
-                  <li>
+                <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
+                <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8">
+                  <li className="li">
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li>Wants to be able to trust these agents</li>
-                  <li>
+                  <li className="li">Wants to be able to trust these agents</li>
+                  <li className="li">
                     Wants to be able to access these agents on her phone or
                     computer
                   </li>
@@ -337,7 +337,7 @@ const Work = () => {
           {/* line */}
           <div className=" h-5p w-12 bg-black dark:bg-white "></div>
         </div>
-        <p className="airbnb-cereal-light text-base leading-8 text-gray-800 dark:text-white ">
+        <p className="airbnb-cereal-light text-base leading-7 text-gray-800 dark:text-white ">
           After the understanding the problem and validation using these
           research methods, I start creating solutions to address these
           problems, prioritizing the earlier defined problems using the
@@ -360,7 +360,7 @@ const Work = () => {
 
         <div className=" border border-gray-500 w-full h-auto flex flex-col justify-center mt-12  ">
           <div className="flex justify-center py-14 ">
-            <img src="../img/vobb_solution.png" style={{ width: '850px' }} />
+            <img src="https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png" style={{ width: '850px' }} />
           </div>
           <div className="flex pb-4">
             <h6 className="airbnb-cereal-bold text-left text-sm leading-8 text-gray-800 dark:text-white ml-24 ">
@@ -381,7 +381,7 @@ const Work = () => {
           portal <br /> A university admin will manage the University or
           institutions account on Vobb. The university admin will have the
           following rights;
-          <ul className="airbnb-cereal-light text-base leading-8 list-disc pl-8">
+          <ul className="airbnb-cereal-light text-base leading-8  pl-8">
             <li>Setting up profile</li>
             <li>
               Accepting / declining activation requests from Agents (Activation
@@ -408,7 +408,7 @@ const Work = () => {
           portal <br /> A university admin will manage the University or
           institutions account on Vobb. The university admin will have the
           following rights;
-          <ul className="airbnb-cereal-light text-base leading-8 list-disc pl-8">
+          <ul className="airbnb-cereal-light text-base leading-8  pl-8">
             <li>Setting up profile</li>
             <li>
               Accepting / declining activation requests from Agents (Activation
@@ -426,7 +426,7 @@ const Work = () => {
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-2xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl ls1 leading-9 text-gray-800 dark:text-white mb-2">
             User flow
           </h6>
           {/* line */}
@@ -445,7 +445,7 @@ const Work = () => {
 
       <div>
         <div className=" mt-20 mb-10 ">
-          <h6 className="neue-machina-ultrabold text-2xl leading-9 text-gray-800 dark:text-white mb-2">
+          <h6 className="neue-machina-ultrabold text-2xl ls1 leading-9 text-gray-800 dark:text-white mb-2">
             High-fidelity prototypes
           </h6>
           {/* line */}
@@ -567,7 +567,11 @@ const Work = () => {
 
       <div className="mt-32">
         <Link href={''}>
-          <a className={` view-project neue-machina-ultrabold bg-black dark:bg-white text-white py-5 px-10 cursor-pointer`}>
+          <a
+            className={` ${
+              theme === 'light' ? 'view-project' : 'view-project-white'
+            }  neue-machina-ultrabold bg-black dark:bg-white text-white py-5 px-10 cursor-pointer`}
+          >
             <p className="flex text-white text-lg dark:text-black">
               View next project{' '}
               <i className="ml-3">
