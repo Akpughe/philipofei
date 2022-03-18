@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import CircleArrow from '../icons/CircleArrow';
 import CricleArrowwhite from '../icons/CricleArrowwhite';
 
-import vobb from '../public/img/vobb.png';
+// import vobb from '../public/img/vobb.png';
 // import vobbProcess from '../public/img/image_2.png';
 // import maryTaylor from '../public/img/mary_taylor.png';
 // import christianMartin from '../public/img/christian_martin.png';
@@ -49,7 +49,7 @@ const Work = () => {
       </div>
 
       <div className=" mb-24 ">
-        <Image src={vobb} />
+        <img src='../img/vobb.png' />
       </div>
 
       <div>
