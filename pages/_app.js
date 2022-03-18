@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Philip Ofei</title>
       </Head>
-      <ThemeProvider attribute="class">
+      <ThemeProvider defaultTheme="dark" attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>
     </>
