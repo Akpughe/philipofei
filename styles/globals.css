@@ -73,9 +73,9 @@
 
 html,
 body {
-  background-image: url('../public/img/Splines.png');
+  /* background-image: url('../public/img/Splines1.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
 }
 
 .bg_dark{
@@ -86,19 +86,19 @@ body {
   outline: 0;
   border-width: 0 0 1px;
   border-color: #14181b;
-  padding: 15px 10px;
+  padding: 25px 10px;
   color: #b8c2cc;
   background-color: transparent;
-  font-size: 24px;
+  font-size: 20px;
 }
 .inp-white {
   outline: 0;
   border-width: 0 0 1px;
   border-color: #8795a1;
-  padding: 15px 10px;
+  padding: 25px 10px;
   color: #b8c2cc;
   background-color: transparent;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
@@ -234,7 +234,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  background-image: url('../public/img/Splines.png');
+  background-image: url('../public/img/Splines1.png');
   background-repeat: repeat;
   background-size: cover;
   background-position: center;

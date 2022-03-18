@@ -11,6 +11,15 @@ module.exports = {
           900: '#101828',
         },
       },
+      backgroundImage: {
+        'nature-light': "url('/img/Splines2.png')",
+        'nature-dark': "url('/img/Splines7.png')",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundImage: ['dark'],
     },
   },
   plugins: [],

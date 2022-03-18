@@ -17,12 +17,12 @@ const Contact = () => {
     <Layout>
       <div className="flex pt-32">
         <div className="flex-1">
-          <h1 className="neue-machina-ultrabold text-6xl">Hey, wanna chat ?</h1>
-          <p className="airbnb-cereal-medium text-2xl">
+          <h1 className="neue-machina-ultrabold text-5xl">Hey, wanna chat ?</h1>
+          <p className="airbnb-cereal-medium text-xl mt-10">
             Tell me what you are interested in...
           </p>
         </div>
-        <div className="flex-1 -mt-5 ">
+        <div className="flex-1 -mt-6 ">
           <form action="">
             <div className="flex flex-col w-full mb-16">
               {/* <label htmlFor="">Your name</label> */}

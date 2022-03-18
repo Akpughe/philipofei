@@ -57,7 +57,7 @@ const Navbar = () => {
               exit={{
                 opacity: 0,
               }}
-              transition={{ type: 'spring', bounce: 0, duration: 0.2 }}
+              transition={{ type: 'spring', bounce: 0.5, duration: 0.3 }}
               close={handleShow}
               // className="bg-transparent px-5 fixed h-full w-full flex items-center justify-center top-0 left-0"
             />
