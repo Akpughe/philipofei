@@ -7,12 +7,12 @@ import CircleArrow from '../icons/CircleArrow';
 import CricleArrowwhite from '../icons/CricleArrowwhite';
 
 import vobb from '../public/img/vobb.png';
-import vobbProcess from '../public/img/image_2.png';
-import maryTaylor from '../public/img/mary_taylor.png';
-import christianMartin from '../public/img/christian_martin.png';
-import vobbSol from '../public/img/vobb_solution.png';
-import vobb_userflow from '../public/img/vobb_userflow.png';
-import vobb_userflow2 from '../public/img/vobb_userflow2.png';
+// import vobbProcess from '../public/img/image_2.png';
+// import maryTaylor from '../public/img/mary_taylor.png';
+// import christianMartin from '../public/img/christian_martin.png';
+// import vobbSol from '../public/img/vobb_solution.png';
+// import vobb_userflow from '../public/img/vobb_userflow.png';
+// import vobb_userflow2 from '../public/img/vobb_userflow2.png';
 import frame1 from '../public/img/Frame 1.png';
 import frame2 from '../public/img/Frame 2.png';
 import frame3 from '../public/img/Frame 3.png';
