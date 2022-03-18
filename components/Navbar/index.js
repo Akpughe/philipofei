@@ -42,7 +42,7 @@ const Navbar = () => {
                 duration: 0.9,
                 stiffness: 100,
               }}
-              className={`z-50 ${
+              className={`dim z-50 ${
                 theme === 'light' ? 'bg-white bg' : 'bg_dark'
               } sm:w-[735px] right-0 top-0 w-full h-screen fixed border dark:border-0 `}
             >

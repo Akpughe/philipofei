@@ -16,7 +16,7 @@ const Sidebar = ({ close }) => {
       <div className=" dark:bg-nature-dark bg-contain bg-no-repeat bg-center h-full">
         <div className="flex justify-end pt-14 pr-24 pb-8 cursor-pointer">
           <div onClick={close}>
-            {theme === 'dark' ? <Closewhite /> : <Close />}
+            {theme && theme === 'light' ? <Close /> : <Closewhite />}
           </div>
         </div>
         <div className=" pl-24 ">
