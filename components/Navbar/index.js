@@ -44,7 +44,7 @@ const Navbar = () => {
               }}
               className={`z-50 ${
                 theme === 'light' ? 'bg-white' : 'bg_dark'
-              } sm:w-[735px] right-0 top-0 w-full h-screen fixed border dark:border-0 bg `}
+              } sm:w-[735px] right-0 top-0 w-full h-screen fixed border dark:border-0 `}
             >
               {' '}
               <Sidebar show={show} close={handleShow} />
