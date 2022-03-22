@@ -14,6 +14,10 @@ module.exports = {
       backgroundImage: {
         'nature-light': "url('/img/Splines1.png')",
         'nature-dark': "url('/img/Splines7.png')",
+        'logo-light':
+          "url('/img/PHILIP OFEI 🚀 (1).png')",
+        'logo-dark':
+          "url('/img/PHILIP OFEI 🚀 (2).png')",
       },
     },
   },

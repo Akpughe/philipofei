@@ -68,15 +68,18 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <a className="cursor-pointer">
-              <img
+              <div className=' bg-logo-light dark:bg-logo-dark bg-no-repeat	bg-contain w-36 h-8 '>
+
+              </div>
+              {/* <img
                 src={
                   theme === 'light'
-                    ? 'https://res.cloudinary.com/davak/image/upload/v1647257743/philip/ofei_ewicvg.svg'
-                    : 'https://res.cloudinary.com/davak/image/upload/v1647259194/philip/PHILIP_OFEI_utzaho.svg'
+                    ? 'https://res.cloudinary.com/davak/image/upload/v1647954036/philip/PHILIP_OFEI_1_qmjmnz.png'
+                    : 'https://res.cloudinary.com/davak/image/upload/v1647954056/philip/PHILIP_OFEI_2_y1cfzi.png'
                 }
                 className="w-150"
                 alt="logo"
-              />
+              /> */}
             </a>
           </Link>
         </div>
