@@ -68,9 +68,7 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <a className="cursor-pointer">
-              <div className=' bg-logo-light dark:bg-logo-dark bg-no-repeat	bg-contain w-36 h-8 '>
-
-              </div>
+              <div className=" bg-logo-light dark:bg-logo-dark bg-no-repeat	bg-contain w-36 h-8 "></div>
               {/* <img
                 src={
                   theme === 'light'
@@ -84,7 +82,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="cursor-pointer" onClick={handleShow}>
-          <Menu />
+          {/* <Menu /> */}
+          <div className="bg-menu-light dark:bg-menu-dark bg-no-repeat bg-contain w-5 h-4"></div>
         </div>
       </div>
     </>

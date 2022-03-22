@@ -1,42 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useTheme } from 'next-themes';
-
-const Toggler = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-  const switchTheme = () => {
-    if (isMounted) {
-      setTheme(theme === 'light' ? 'dark' : 'light');
-    }
-  };
-
-  return (
-    <button
-      aria-label="Toggle Dark Mode"
-      type="button"
-      className="p-3 h-32 w-32 order-2 md:order-3"
-      onClick={switchTheme}
-    >
-      <div className='bg-lm dark:bg-dm bg-no-repeat bg-contain w-14 h-14'></div>
-      {/* {theme === 'light' ? (
-        <svg
-          width="60"
-          height="60"
-          viewBox="0 0 72 72"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="36" cy="36" r="36" fill="#14181B" />
-          <path
-            d="M51.8833 42.5501C51.6167 42.1001 50.8667 41.4001 49 41.7334C47.9667 41.9168 46.9167 42.0001 45.8667 41.9501C41.9833 41.7834 38.4667 40.0001 36.0167 37.2501C33.85 34.8334 32.5167 31.6834 32.5 28.2834C32.5 26.3834 32.8667 24.5501 33.6167 22.8168C34.35 21.1334 33.8333 20.2501 33.4667 19.8834C33.0833 19.5001 32.1833 18.9668 30.4167 19.7001C23.6 22.5668 19.3833 29.4001 19.8833 36.7168C20.3833 43.6001 25.2167 49.4834 31.6167 51.7001C33.15 52.2334 34.7667 52.5501 36.4333 52.6168C36.7 52.6334 36.9667 52.6501 37.2333 52.6501C42.8167 52.6501 48.05 50.0168 51.35 45.5334C52.4667 43.9834 52.1667 43.0001 51.8833 42.5501Z"
-            fill="white"
-          />
-        </svg>
-      ) : (
-        <svg
+<svg
           width="60"
           height="60"
           viewBox="0 0 72 72"
@@ -53,9 +15,3 @@ const Toggler = () => {
             fill="#101828"
           />
         </svg>
-      )} */}
-    </button>
-  );
-};
-
-export default Toggler;

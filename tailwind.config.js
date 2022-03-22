@@ -14,10 +14,12 @@ module.exports = {
       backgroundImage: {
         'nature-light': "url('/img/Splines1.png')",
         'nature-dark': "url('/img/Splines7.png')",
-        'logo-light':
-          "url('/img/PHILIP OFEI 🚀 (1).png')",
-        'logo-dark':
-          "url('/img/PHILIP OFEI 🚀 (2).png')",
+        'logo-light': "url('/img/PHILIP OFEI 🚀 (1).png')",
+        'logo-dark': "url('/img/PHILIP OFEI 🚀 (2).png')",
+        'menu-light': "url('/img/MENU ICON (1).png')",
+        'menu-dark': "url('/img/MENU ICON.png')",
+        lm: "url('/img/godark.svg')",
+        dm: "url('/img/golight.svg')",
       },
     },
   },
