@@ -79,7 +79,12 @@ const About = () => {
           </div>
           {/* image */}
           <div className="sm:flex hidden justify-center flex-1 px-4 -mt-4 ">
-            <motion.div variants={fadeInUp} className={` ${theme === 'light' ? 'img-rect' : 'img-rect-white'} `}>
+            <motion.div
+              variants={fadeInUp}
+              className={` ${
+                theme === 'light' ? 'img-rect' : 'img-rect-white'
+              } `}
+            >
               <Image className="img-rect-image z-10" src={philip} />
             </motion.div>
           </div>
@@ -244,37 +249,37 @@ const About = () => {
               } w-px h-full absolute`}
             ></div>
 
-            <div className="">
+            <div className=" z-50 ">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="z-50 ">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="z-50 ">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="z-50 ">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="z-50 ">
+              {theme === 'light' ? <Circle /> : <Circlewhite />}
+            </div>
+            <div className="z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
             <div className="">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="">
+            <div className="z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="">
+            <div className="z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="">
+            <div className="z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="">
-              {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="">
-              {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="">
-              {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="">
-              {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="">
-              {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="mb-4">
+            <div className="mb-4 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
           </div>
@@ -386,22 +391,22 @@ const About = () => {
               } block-line w-px h-full absolute  `}
             ></div>
             {/* begin */}
-            <div className="circle-mb mt-10">
+            <div className="circle-mb mt-10 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="circle-mb1 mt-10">
+            <div className="circle-mb1 mt-10 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="circle-mb1i mt-10">
+            <div className="circle-mb1i mt-10 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="circle-mb1e mt-10">
+            <div className="circle-mb1e mt-10 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="circle-mb1s mt-10">
+            <div className="circle-mb1s mt-10 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="mt-10 mb-36">
+            <div className="mt-10 mb-36 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
             {/* end */}
@@ -572,19 +577,19 @@ const About = () => {
               } block-line w-px h-full absolute  `}
             ></div>
 
-            <div className="mb-20 mt-8">
+            <div className="mb-20 mt-8 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="mb-20">
+            <div className="mb-20 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="mb-24">
+            <div className="mb-24 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="mb85">
+            <div className="mb85 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
-            <div className="mb-20">
+            <div className="mb-20 z-50 ">
               {theme === 'light' ? <Circle /> : <Circlewhite />}
             </div>
           </div>
