@@ -17,7 +17,7 @@ const Toggler = () => {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="p-3 h-32 w-32 order-2 md:order-3"
+      className="p-3 h-32 sm:w-32 w-20 order-2 md:order-3"
       onClick={switchTheme}
     >
       <div className='bg-lm dark:bg-dm bg-no-repeat bg-contain w-14 h-14'></div>

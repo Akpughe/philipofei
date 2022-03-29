@@ -143,7 +143,7 @@ const Work = () => {
         </div>
 
         <div className="border border-gray-500 w-full h-425 flex justify-center items-center ">
-          <img src="https://res.cloudinary.com/davak/image/upload/v1647608696/philip/image_2_exyklt.png" className=" h-72 " />
+          <img src="https://res.cloudinary.com/davak/image/upload/v1647608696/philip/image_2_exyklt.png" className=" sm:h-72 h-36 " />
         </div>
       </div>
 
@@ -202,7 +202,7 @@ const Work = () => {
               style={{ width: '320px', height: '630px' }}
             />
           </div>
-          <div className=" max-w-2xl px-7">
+          <div className=" max-w-2xl px-7 sm:mt-0 mt-4">
             <h2 className="airbnb-cereal-medium font-size4 ls2 mb-3 ">
               Mary Taylor, 17yrs
             </h2>
@@ -242,7 +242,7 @@ const Work = () => {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className='sm:mt-0 mt-4'>
                 <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8">
                   <li className="li">
@@ -268,7 +268,7 @@ const Work = () => {
               style={{ width: '360px', height: '630px' }}
             />
           </div>
-          <div className=" max-w-2xl px-7">
+          <div className=" max-w-2xl px-7 sm:mt-0 mt-4">
             <h2 className="airbnb-cereal-medium font-size4 ls2 mb-3 ">
               Christain Martin, 27yrs
             </h2>
@@ -309,7 +309,7 @@ const Work = () => {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div className='sm:mt-0 mt-4'> 
                 <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8">
                   <li className="li">
@@ -359,11 +359,11 @@ const Work = () => {
         </p>
 
         <div className=" border border-gray-500 w-full h-auto flex flex-col justify-center mt-12  ">
-          <div className="flex justify-center py-14 ">
-            <img src="https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png" style={{ width: '850px' }} />
+          <div className="flex justify-center sm:py-14 py-7 ">
+            <img className='vb-sol' src="https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png" />
           </div>
-          <div className="flex pb-4">
-            <h6 className="airbnb-cereal-bold text-left text-sm leading-8 text-gray-800 dark:text-white ml-24 ">
+          <div className="flex pb-4 sm:px-12 px-4 justify-start">
+            <h6 className="airbnb-cereal-bold text-left text-sm leading-8 text-gray-800 dark:text-white ">
               The pipeline
             </h6>
           </div>
