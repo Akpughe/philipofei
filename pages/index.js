@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import BounceArrow from '../icons/BounceArrow';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -24,6 +25,25 @@ export default function Home() {
       },
     },
   };
+
+  const [lastYPos, setLastYPos] = useState(0);
+  const [shouldShowActions, setShouldShowActions] = useState(false);
+
+  // useEffect(() => {
+  //   function handleScroll() {
+  //     const yPos = window.scrollY;
+  //     const isScrollingUp = yPos > lastYPos;
+
+  //     setShouldShowActions(isScrollingUp);
+  //     setLastYPos(yPos);
+  //   }
+
+  //   window.addEventListener('scroll', handleScroll, false);
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll, true);
+  //   };
+  // }, [lastYPos]);
 
   return (
     <>
@@ -83,7 +103,16 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className=" pt-14 ">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.3 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0, scale: 0 },
+              }}
+            >
               {/* <Image src={invest} /> */}
               <img
                 src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
@@ -97,8 +126,18 @@ export default function Home() {
                   Product Design
                 </p>
               </div>
-            </div>
-            <div className=" pt-14 ">
+            </motion.div>
+            <motion.div
+              className=" pt-14 "
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.3 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0, scale: 0 },
+              }}
+            >
               {/* <Image src={invest} /> */}
               <img
                 src="https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg"
@@ -112,7 +151,7 @@ export default function Home() {
                   UX {'&'} UI Design
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </Layout>
