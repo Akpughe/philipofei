@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import BounceArrow from '../icons/BounceArrow';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Slide from 'react-reveal/Slide';
 
 export default function Home() {
   // Our custom easing
@@ -87,9 +88,6 @@ export default function Home() {
             </div>
             {/* images */}
             <div>
-              {/* <Image
-                src={vobb}
-              /> */}
               <img
                 src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg"
                 alt=""
@@ -103,16 +101,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
+            <Slide left>
+            <div>
               {/* <Image src={invest} /> */}
               <img
                 src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
@@ -126,18 +116,11 @@ export default function Home() {
                   Product Design
                 </p>
               </div>
-            </motion.div>
-            <motion.div
-              className=" pt-14 "
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
-              }}
-            >
+            </div>
+            </Slide>
+            <Slide right>
+
+            <div className=" pt-14 ">
               {/* <Image src={invest} /> */}
               <img
                 src="https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg"
@@ -151,7 +134,9 @@ export default function Home() {
                   UX {'&'} UI Design
                 </p>
               </div>
-            </motion.div>
+            </div>
+            </Slide>
+
           </div>
         </motion.div>
       </Layout>
