@@ -14,6 +14,8 @@ import { useTheme } from 'next-themes';
 const About = () => {
   const [show, setShow] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [active, setActive] = useState(false)
+
 
   function changeColor(e) {
     e.target.style.color = '#EF4444';
@@ -29,7 +31,7 @@ const About = () => {
   const fadeInUp = {
     initial: {
       y: 60,
-      opacity: 0,
+      opacity: 0.5,
       transition: { duration: 1, ease: easing },
     },
     animate: {
@@ -41,10 +43,40 @@ const About = () => {
       },
     },
   };
+  const fadeInUp2 = {
+    initial: {
+      y: 60,
+      opacity: 0.5,
+      transition: { duration: 1, ease: easing },
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: easing,
+      },
+    },
+  };
+  const fadeInUp3 = {
+    initial: {
+      x: 60,
+      opacity: 0.5,
+      transition: { duration: 1, ease: easing },
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: easing,
+      },
+    },
+  };
 
   return (
     <Layout>
-      <motion.div initial="initial" animate="animate" exit={{ opacity: 0 }}>
+      <motion.div initial="initial" animate="animate" exit={{ opacity: 0.5 }}>
         <div className="flex pt-24 ">
           <div className="flex-1">
             {/* head */}
@@ -59,7 +91,7 @@ const About = () => {
             {/* paragraph */}
             <div>
               <motion.p
-                variants={fadeInUp}
+                variants={fadeInUp2}
                 className="airbnb-cereal-medium about_p text-gray-400 dark:text-white"
                 // style={{ lineHeight: '48px', width: '750px' }}
               >
@@ -80,7 +112,7 @@ const About = () => {
           {/* image */}
           <div className="sm:flex hidden justify-center flex-1 px-4 -mt-4 ">
             <motion.div
-              variants={fadeInUp}
+              variants={fadeInUp3}
               className={` ${
                 theme === 'light' ? 'img-rect' : 'img-rect-white'
               } `}
@@ -97,18 +129,32 @@ const About = () => {
             <BounceArrow />
           </div>
         </div>
-        <div className=" mt-20 ">
+        <motion.div
+          className=" mt-20 "
+          initial={{ opacity: 0.4 }}
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0.5, scale: 0 },
+          }}
+        >
           <h6 className="airbnb-cereal-medium text-xl leading-9 sidebar-git dark:text-white mb-2">
             Skills Highlight ✨.
           </h6>
           {/* line */}
-          <div className=" h-5p w-11 bgblack dark:bg-white "></div>
-        </div>
+          <div className=" h-5p w-11 bgblack dark:bg-white"></div>
+        </motion.div>
         <div className="pb-32">
           {/* 1 */}
           <div className="flex mt-16 justify-between">
             <div>
-              <a className="neue-machina-ultrabold skill-size cursor-pointer text-red-500 ">
+              <a
+                className="neue-machina-ultrabold skill-size cursor-pointer dark:text-white"
+                onMouseEnter={changeColor}
+                onMouseLeave={changeBack}
+              >
                 UX Research
               </a>
             </div>
@@ -249,79 +295,299 @@ const About = () => {
               } w-px h-full absolute`}
             ></div>
 
-            <div className=" z-50 ">
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className=" z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className=""
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="mb-4 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="mb-4 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
+            </motion.div>
           </div>
           {/* end */}
           {/* new */}
           <div className=" h-full pt-10 pl-8 pb-32  ">
             {' '}
-            <p className="neue-machina-ultrabold devby dark:text-white text-xl">
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white text-xl"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               {' '}
               Figma{' '}
-            </p>{' '}
-            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt12 ">
+            </motion.p>{' '}
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white text-xl mt12 "
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               {' '}
               Adobe XD{' '}
-            </p>{' '}
-            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt12">
+            </motion.p>{' '}
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white text-xl mt12"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Adobe illustration
-            </p>
-            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt12">
+            </motion.p>
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white text-xl mt12"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Adobe Photoshop
-            </p>
-            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt24">
+            </motion.p>
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white text-xl mt24"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Framer
-            </p>
-            <p className="neue-machina-ultrabold devby dark:text-white h-5 text-xl mt24">
+            </motion.p>
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white h-5 text-xl mt24"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Google Services
-            </p>
-            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt33">
+            </motion.p>
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white text-xl mt33"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Miro
-            </p>
-            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt25">
+            </motion.p>
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white text-xl mt25"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Whimsical
-            </p>
-            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt26">
+            </motion.p>
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white text-xl mt26"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Lookback
-            </p>
-            <p className="neue-machina-ultrabold devby dark:text-white text-xl mt12">
+            </motion.p>
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white text-xl mt12"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Notion
-            </p>
-            <p className="neue-machina-ultrabold devby dark:text-white h-5 text-xl mt25">
+            </motion.p>
+            <motion.p
+              className="neue-machina-ultrabold devby dark:text-white h-5 text-xl mt25"
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Jira
-            </p>
+            </motion.p>
           </div>
           {/* new end */}
         </div>
@@ -338,39 +604,99 @@ const About = () => {
           {/* b  */}
           <div className=" h-full pt-10 pr-10 ">
             {' '}
-            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white text-xl space1 ">
+            <motion.p
+              className="flex flex-col neue-machina-ultrabold devby dark:text-white text-xl space1 "
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               {' '}
               Medsaf Disrupt Pharmacy{' '}
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
-            </p>{' '}
-            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2  ">
+            </motion.p>{' '}
+            <motion.p
+              className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2  "
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               {' '}
               Parthian Partners (i-invest){' '}
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
-            </p>{' '}
-            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2i ">
+            </motion.p>{' '}
+            <motion.p
+              className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2i "
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               KUPLR
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
-            </p>
-            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2e ">
+            </motion.p>
+            <motion.p
+              className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2e "
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               Yudimy
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
-            </p>
-            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2s ">
+            </motion.p>
+            <motion.p
+              className="flex flex-col neue-machina-ultrabold devby dark:text-white  text-xl space2s "
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               VOBBS
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
-            </p>
-            <p className="flex flex-col neue-machina-ultrabold devby dark:text-white text-xl ">
+            </motion.p>
+            <motion.p
+              className="flex flex-col neue-machina-ultrabold devby dark:text-white text-xl "
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               <div>
                 AFREAL{' '}
                 <small className="text-xs">
@@ -380,7 +706,7 @@ const About = () => {
               <span className="airbnb-cereal-medium text-sm text-gray-400 dark:text-white ">
                 July 2021 - Lagos, Nigeria
               </span>
-            </p>
+            </motion.p>
           </div>
           {/* e  */}
           {/* begin */}
@@ -391,31 +717,101 @@ const About = () => {
               } block-line w-px h-full absolute  `}
             ></div>
             {/* begin */}
-            <div className="circle-mb mt-10 z-50 ">
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="circle-mb mt-10 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="circle-mb1 mt-10 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="circle-mb1 mt-10 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="circle-mb1i mt-10 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="circle-mb1i mt-10 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="circle-mb1e mt-10 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="circle-mb1e mt-10 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="circle-mb1s mt-10 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="circle-mb1s mt-10 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="mt-10 mb-36 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="mt-10 mb-36 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
+            </motion.div>
             {/* end */}
           </div>
           {/* end */}
           {/* new */}
           <div className=" h-full pt-10 pl-12 pb-32  ">
             {' '}
-            <div className=" mb-16 ">
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className=" mb-16 "
+            >
               <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 UX {'&'} UI Designer (Remote){' '}
@@ -450,8 +846,18 @@ const About = () => {
                   Fund 2021
                 </li>
               </ul>
-            </div>
-            <div className=" margin-b ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className=" margin-b "
+            >
               <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 UX {'&'} UI Designer{' '}
@@ -476,8 +882,18 @@ const About = () => {
                   i-invest website.
                 </li>
               </ul>
-            </div>
-            <div className="margin-b3">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="margin-b3"
+            >
               <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 Lead Product Designer (Contract)
@@ -496,8 +912,18 @@ const About = () => {
                   libraries.
                 </li>
               </ul>
-            </div>
-            <div className="margin-b4">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="margin-b4"
+            >
               <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 Product Designer
@@ -505,7 +931,7 @@ const About = () => {
               <ul className="airbnb-cereal-medium text-sm grey1 dark:text-white pl-5 max-w-xl pt-5  list-disc">
                 <li className="pb-4">
                   At Yudimy, i worked on clarity.yudimy.com, a psychometric web
-                  app that helps individuals and organizations to be happily
+                  app that helps inmotion.iduals and organizations to be happily
                   productive.
                 </li>
                 <li className="pb-4">
@@ -518,8 +944,18 @@ const About = () => {
                   achieve these results
                 </li>
               </ul>
-            </div>
-            <div className="margin-b5">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="margin-b5"
+            >
               <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 UX {'&'} UI Designer (Contract){' '}
@@ -538,8 +974,17 @@ const About = () => {
                   Designed high-fidelity prototypes of the web application
                 </li>
               </ul>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+            >
               <p className="neue-machina-ultrabold devby dark:text-white  text-xl">
                 {' '}
                 UX {'&'} UI Designer (Contract){' '}
@@ -556,7 +1001,7 @@ const About = () => {
                   Proposed several solutions around the companies products
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
           {/* new end */}
         </div>
@@ -577,57 +1022,157 @@ const About = () => {
               } block-line w-px h-full absolute  `}
             ></div>
 
-            <div className="mb-20 mt-8 z-50 ">
+            <motion.div
+              initial={{ opacity: 0.5 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="mb-20 mt-8 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="mb-20 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.3 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="mb-20 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="mb-24 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.3 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="mb-24 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="mb85 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.3 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="mb85 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
-            <div className="mb-20 z-50 ">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.3 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="mb-20 z-50 "
+            >
               {theme === 'light' ? <Circle /> : <Circlewhite />}
-            </div>
+            </motion.div>
           </div>
 
           <div className=" h-full max-w-xs pl-4 pb-32 pt-5 ">
             {' '}
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white text-xl mb_14 mt-4">
+            <motion.p
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white text-xl mb_14 mt-4"
+            >
               {' '}
               Google{' '}
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 UX Design - 2022
               </span>
-            </p>{' '}
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white text-xl mb_14i ">
+            </motion.p>{' '}
+            <motion.p
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white text-xl mb_14i "
+            >
               {' '}
               Udemy{' '}
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 Learn Jira Real world examples - 2021
               </span>
-            </p>{' '}
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-xl mb-14">
+            </motion.p>{' '}
+            <motion.p
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-xl mb-14"
+            >
               Product school
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 Product Masterclass : How to build digital products - 2020
               </span>
-            </p>
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-xl mb-14">
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-xl mb-14"
+            >
               Udacity
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 User Experience Design Nano Degree - 2020
               </span>
-            </p>
-            <p className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-xl">
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0.4 }}
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 1, ease: easing }}
+              variants={{
+                visible: { opacity: 1, scale: 1 },
+                hidden: { opacity: 0.5, scale: 0 },
+              }}
+              className="flex flex-col neue-machina-ultrabold text-gray-700 dark:text-white  text-xl"
+            >
               University of Abuja
               <span className="airbnb-cereal-medium text-sm mt-2 text-gray-700 dark:text-white ">
                 B.Sc. PHYSICS - 2015
               </span>
-            </p>
+            </motion.p>
           </div>
         </div>
         {/* end education */}
