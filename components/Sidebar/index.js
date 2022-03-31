@@ -13,7 +13,7 @@ const Sidebar = ({ close }) => {
 
   return (
     <>
-      <div className=" dark:bg-nature-dark bg-contain bg-no-repeat bg-center h-full">
+      <div className=" dark:bg-nature-dark bg-cover bg-no-repeat bg-center h-full">
         <div className="flex justify-end pt-14 sm:pr-24 pr-12 pb-8 cursor-pointer">
           <div onClick={close}>
             {theme && theme === 'light' ? <Close /> : <Closewhite />}
