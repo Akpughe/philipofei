@@ -5,6 +5,8 @@ import BounceArrow from '../icons/BounceArrow';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Slide from 'react-reveal/Slide';
+import { GlassMagnifier } from 'react-image-magnifiers';
+import Magnifier from 'react-magnifier';
 
 export default function Home() {
   // Our custom easing
@@ -88,10 +90,21 @@ export default function Home() {
             </div>
             {/* images */}
             <div>
-              <img
+              <Magnifier
+                src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg"
+                mgShape="circle"
+                zoomFactor={1.5}
+                mgBorderWidth={2}
+                mgShowOverflow={true}
+                mgMouseOffsetX={0}
+                mgMouseOffsetY={0}
+                mgTouchOffsetX={-50}
+                mgTouchOffsetY={-50}
+              />
+              {/* <img
                 src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg"
                 alt=""
-              />
+              /> */}
               <div className="py-8">
                 <h1 className="neue-machina-ultrabold font-black font-size4">
                   VOBB
@@ -102,41 +115,61 @@ export default function Home() {
               </div>
             </div>
             <Slide left>
-            <div>
-              {/* <Image src={invest} /> */}
-              <img
-                src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
-                alt=""
-              />
-              <div className="py-8">
-                <h1 className="neue-machina-ultrabold font-black font-size4 dark:text-white pb-0">
-                  i-invest
-                </h1>
-                <p className="airbnb-cereal-medium kow dark:text-white">
-                  Product Design
-                </p>
+              <div>
+                {/* <Image src={invest} /> */}
+                <Magnifier
+                  src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
+                  mgShape="circle"
+                  zoomFactor={1.5}
+                  mgBorderWidth={2}
+                  mgShowOverflow={true}
+                  mgMouseOffsetX={0}
+                  mgMouseOffsetY={0}
+                  mgTouchOffsetX={-50}
+                  mgTouchOffsetY={-50}
+                />
+                {/* <img
+                  src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
+                  alt=""
+                /> */}
+                <div className="py-8">
+                  <h1 className="neue-machina-ultrabold font-black font-size4 dark:text-white pb-0">
+                    i-invest
+                  </h1>
+                  <p className="airbnb-cereal-medium kow dark:text-white">
+                    Product Design
+                  </p>
+                </div>
               </div>
-            </div>
             </Slide>
             <Slide right>
-
-            <div className=" pt-14 ">
-              {/* <Image src={invest} /> */}
-              <img
-                src="https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg"
-                alt=""
-              />
-              <div className="py-8">
-                <h1 className="neue-machina-ultrabold font-black font-size4 dark:text-white">
-                  Afreal one
-                </h1>
-                <p className="airbnb-cereal-medium kow dark:text-white">
-                  UX {'&'} UI Design
-                </p>
+              <div className=" pt-14 ">
+                {/* <Image src={invest} /> */}
+                <Magnifier
+                  src="https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg"
+                  mgShape="circle"
+                  zoomFactor={1.5}
+                  mgBorderWidth={2}
+                  mgShowOverflow={true}
+                  mgMouseOffsetX={0}
+                  mgMouseOffsetY={0}
+                  mgTouchOffsetX={-50}
+                  mgTouchOffsetY={-50}
+                />
+                {/* <img
+                  src="https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg"
+                  alt=""
+                /> */}
+                <div className="py-8">
+                  <h1 className="neue-machina-ultrabold font-black font-size4 dark:text-white">
+                    Afreal one
+                  </h1>
+                  <p className="airbnb-cereal-medium kow dark:text-white">
+                    UX {'&'} UI Design
+                  </p>
+                </div>
               </div>
-            </div>
             </Slide>
-
           </div>
         </motion.div>
       </Layout>
