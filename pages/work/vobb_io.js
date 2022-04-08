@@ -15,8 +15,6 @@ import DiagArrow from '../../icons/DiagArrow';
 // import vobb_userflow from '../public/img/vobb_userflow.png';
 // import vobb_userflow2 from '../public/img/vobb_userflow2.png';
 
-
-
 import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
 
@@ -243,15 +241,15 @@ const Vobb = () => {
             Breakdown
           </h6>
           <ul className="airbnb-cereal-light  text-base leading-7 pl-8 work-p dark:text-white">
-            <li className="li">
+            <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
               For Students; they will be able to find credible study abroad
               agents to work with for easy processing of their academic travels.
             </li>
-            <li className="li">
+            <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
               For agents; it goes a little deeper than that, Agents can get
               students through Vobb and also showcase their portfolio.
             </li>
-            <li className="li">
+            <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
               Think about it as Behance is to designers and Github is to
               developers, Vobb will be to small scale “Travel agencies”
             </li>
@@ -320,10 +318,10 @@ const Vobb = () => {
           This always leads to;
         </p>
         <ul className="airbnb-cereal-light text-base leading-7  pl-6 work-p dark:text-white mt-1 ">
-          <li className="-mt-1 li">Fraud</li>
-          <li className="-mt-1 li">Loss of money for students</li>
-          <li className="-mt-1 li">Loss of prospects for university</li>
-          <li className="-mt-1 li">Trust issues</li>
+          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>Fraud</li>
+          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>Loss of money for students</li>
+          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>Loss of prospects for university</li>
+          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>Trust issues</li>
         </ul>
       </motion.div>
 
@@ -406,12 +404,12 @@ const Vobb = () => {
               <div className=" mr-10 ">
                 <h6 className="airbnb-cereal-bold text-xs">Goals 😃</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7 mt-2  max-w-sm pl-8 work-p dark:text-white">
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li className="li">Wants to be able to trust these agents</li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Wants to be able to trust these agents</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to access these agents on her phone or
                     computer
                   </li>
@@ -420,12 +418,12 @@ const Vobb = () => {
               <div className="sm:mt-0 mt-4">
                 <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7 mt-2  max-w-sm pl-8 work-p dark:text-white">
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li className="li">Wants to be able to trust these agents</li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Wants to be able to trust these agents</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to access these agents on her phone or
                     computer
                   </li>
@@ -490,12 +488,12 @@ const Vobb = () => {
               <div className=" mr-10 ">
                 <h6 className="airbnb-cereal-bold text-xs">Goals 😃</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7 pl-6 max-w-sm work-p dark:text-white">
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li className="li">Wants to be able to trust these agents</li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Wants to be able to trust these agents</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to access these agents on her phone or
                     computer
                   </li>
@@ -504,12 +502,12 @@ const Vobb = () => {
               <div className="sm:mt-0 mt-4">
                 <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8 work-p dark:text-white">
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li className="li">Wants to be able to trust these agents</li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Wants to be able to trust these agents</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to access these agents on her phone or
                     computer
                   </li>
@@ -563,7 +561,11 @@ const Vobb = () => {
           <div className="flex justify-center sm:py-14 py-7 ">
             <img
               className="vb-sol"
-              src={theme === 'light' ? "https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png" : "https://res.cloudinary.com/davak/image/upload/v1649415892/philip/Group_12776_ztvlus.svg"}
+              src={
+                theme === 'light'
+                  ? 'https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png'
+                  : 'https://res.cloudinary.com/davak/image/upload/v1649415892/philip/Group_12776_ztvlus.svg'
+              }
             />
           </div>
           <div className="flex pb-4 sm:px-12 px-4 justify-start">
@@ -600,12 +602,12 @@ const Vobb = () => {
         </p>
 
         <ul className="airbnb-cereal-light text-base leading-6 work-p dark:text-white mt-1 pl-8">
-          <li className="li">Setting up profile</li>
-          <li className="li">
+          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Setting up profile</li>
+          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
             Accepting / declining activation requests from Agents (Activation
             requests will be explained under {'‘'}Agents{'’'})
           </li>
-          <li className="li">
+          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
             Viewing incoming applications and general statistics
           </li>
         </ul>
@@ -646,12 +648,12 @@ const Vobb = () => {
           on Vobb. The university admin will have the following rights;
         </p>
         <ul className="airbnb-cereal-light text-base leading-6 work-p dark:text-white  pl-8">
-          <li className="li">Setting up profile</li>
-          <li className="li">
+          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Setting up profile</li>
+          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
             Accepting / declining activation requests from Agents (Activation
             requests will be explained under {'‘'}Agents{'’'})
           </li>
-          <li className="li">
+          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
             Viewing incoming applications and general statistics
           </li>
         </ul>
@@ -739,7 +741,7 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/davak/image/upload/v1649399045/philip/Frame_2__ts2so3.svg"/>
+            <img src="https://res.cloudinary.com/davak/image/upload/v1649399045/philip/Frame_2__ts2so3.svg" />
           </div>
         </div>
 

@@ -212,27 +212,27 @@ const Invest = () => {
             Breakdown
           </h6>
           <ul className="airbnb-cereal-light  text-base leading-7 pl-8 work-p dark:text-white">
-            <li className="li">
+            <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
               Build a strong portfolio by choosing from a variety of financial
               products like Treasury bills, Fixed deposit notes, Commercial
               papers, Eurobonds, Equities, Insurance, currated savings plans and
               more.
             </li>
-            <li className="li">
+            <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
               Track your investment portfolio performance on the go and access
               everything you need directly from your mobile phone anywhere in
               the world.
             </li>
-            <li className="li">
+            <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
               Top up, withdraw, and transfer funds to family and friends on
               i-invest, from your wallet.
             </li>
-            <li className="li">
+            <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
               Invest safely {'&'} securely with bank-level security, end-to-end
               encryption protocols, two-factor authentication (2FA) protection
               and other cutting-edge security technologies.
             </li>
-            <li className="li">
+            <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
               Stay informed on financial trends with real-time update on market
               trends, and everything happening with the financial industry.
             </li>
@@ -369,38 +369,38 @@ const Invest = () => {
               <div className=" mr-10 ">
                 <h6 className="airbnb-cereal-bold text-xs">Goals 😃</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8 work-p dark:text-white">
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     To conveniently manage his finances with 24/7 access to
                     execute financial transactions even when he is out of the
                     country
                   </li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Achieve his financial goals with minimal effort at a
                     relatively high ROI
                   </li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Access to real-time financial advisory in order to always
                     make informed decisions
                   </li>
-                  <li className="li">Complicated transaction processes</li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Complicated transaction processes</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Inadequate access to real-time financial news • Fraudulent
                     investment companies
                   </li>
-                  <li className="li">Low interest rates</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Low interest rates</li>
                 </ul>
               </div>
               <div className="sm:mt-0 mt-4">
                 <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8 work-p dark:text-white">
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Difficulty in tracking investments across multiple platforms
                   </li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Not being able to read investment thread because of too much
                     charts and graphs
                   </li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Not being able to make a decision, no tailored news channels
                   </li>
                 </ul>
@@ -450,34 +450,34 @@ const Invest = () => {
               <div className=" mr-10 ">
                 <h6 className="airbnb-cereal-bold text-xs">Goals 😃</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7 pl-6 max-w-sm work-p dark:text-white">
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     To conveniently manage her finances with 24/7 access to
                     execute financial transactions
                   </li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     To acheive her short and long term business expansion goals
                   </li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Gain access to low interest loans and high interest
                     investment opportunities
                   </li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Access to real-time business advisory in order to stay ahead
                     in her business engagements
                   </li>
-                  <li className="li">To secure her business legacy</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>To secure her business legacy</li>
                 </ul>
               </div>
               <div className="sm:mt-0 mt-4">
                 <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8 work-p dark:text-white">
-                  <li className="li">Infrequent flow of income</li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Infrequent flow of income</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Inability to afford long-term investments due to increased
                     liquidity demands
                   </li>
-                  <li className="li">Fraudulent investment companies</li>
-                  <li className="li">
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Fraudulent investment companies</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Complicated technical investment linguals
                   </li>
                 </ul>
