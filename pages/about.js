@@ -102,19 +102,18 @@ const About = () => {
                 meeting both business and user needs optimally.
               </p>
               <p className="airbnb-cereal-medium about_p text-gray-400 dark:text-white">
-              Using strategy, research and design to
-                solve product challenges - The outcome : Functional and
-                technically refined products that are aswell aesthetically
-                pleasing and easy to use.
+                Using strategy, research and design to solve product challenges
+                - The outcome : Functional and technically refined products that
+                are aswell aesthetically pleasing and easy to use.
               </p>
               <p className="airbnb-cereal-medium about_p text-gray-400 dark:text-white">
-              I have worked with some of the
-                front runners in organizations across Fintech, Realestate-tech,
-                Medtech, Edu-tech and Psychometric-tech.
+                I have worked with some of the front runners in organizations
+                across Fintech, Realestate-tech, Medtech, Edu-tech and
+                Psychometric-tech.
               </p>
               <p className="airbnb-cereal-medium about_p text-gray-400 dark:text-white">
-              I love traveling
-                and exploring food documentaries from around the world
+                I love traveling and exploring food documentaries from around
+                the world
               </p>
             </motion.div>
           </div>
