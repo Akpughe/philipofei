@@ -563,7 +563,7 @@ const Vobb = () => {
           <div className="flex justify-center sm:py-14 py-7 ">
             <img
               className="vb-sol"
-              src="https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png"
+              src={theme === 'light' ? "https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png" : "https://res.cloudinary.com/davak/image/upload/v1649415892/philip/Group_12776_ztvlus.svg"}
             />
           </div>
           <div className="flex pb-4 sm:px-12 px-4 justify-start">
