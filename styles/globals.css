@@ -427,11 +427,11 @@ body {
 }
 
 .block-line {
-  background-image: url('../icons/dash.svg');
+  background-image: url('https://res.cloudinary.com/davak/image/upload/v1649415139/philip/dash_kidnws.svg');
 }
 
 .block-line-white {
-  background-image: url('../icons/dash-white.svg');
+  background-image: url('https://res.cloudinary.com/davak/image/upload/v1649415139/philip/dash-white_q6tt2v.svg');
 }
 
 .circle-mb {
