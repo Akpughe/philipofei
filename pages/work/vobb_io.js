@@ -14,8 +14,7 @@ import DiagArrow from '../../icons/DiagArrow';
 // import vobbSol from '../public/img/vobb_solution.png';
 // import vobb_userflow from '../public/img/vobb_userflow.png';
 // import vobb_userflow2 from '../public/img/vobb_userflow2.png';
-import frame2 from '../../public/img/Frame 2_.svg';
-import frame4 from '../../public/img/Frame 4_.svg';
+
 
 
 import { useTheme } from 'next-themes';
