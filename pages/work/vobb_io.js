@@ -270,7 +270,7 @@ const Vobb = () => {
 
         <div className="border border-gray-500 w-full h-425 flex justify-center items-center ">
           <motion.img
-            src="https://res.cloudinary.com/davak/image/upload/v1647608696/philip/image_2_exyklt.png"
+            src="https://res.cloudinary.com/davak/image/upload/v1649105315/philip/image_2_lalq7b.svg"
             className=" sm:h-72 h-36 "
             initial="hidden"
             whileInView="visible"
