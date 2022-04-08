@@ -519,9 +519,7 @@ const Work = () => {
               Style guide
             </h6>
           </div>
-          <div>
-            {/* <Image src={frame1} /> */}
-          </div>
+          <div>{/* <Image src={frame1} /> */}</div>
         </div>
 
         <div>
@@ -530,9 +528,7 @@ const Work = () => {
               Landing page
             </h6>
           </div>
-          <div>
-            {/* <Image src={frame2} /> */}
-          </div>
+          <div>{/* <Image src={frame2} /> */}</div>
         </div>
 
         <div>
@@ -541,9 +537,7 @@ const Work = () => {
               Authentication
             </h6>
           </div>
-          <div>
-            {/* <Image src={frame3} /> */}
-          </div>
+          <div>{/* <Image src={frame3} /> */}</div>
         </div>
 
         <div>
@@ -552,9 +546,7 @@ const Work = () => {
               Components
             </h6>
           </div>
-          <div>
-            {/* <Image src={frame4} /> */}
-          </div>
+          <div>{/* <Image src={frame4} /> */}</div>
         </div>
 
         <div>
@@ -563,9 +555,7 @@ const Work = () => {
               Student Dashboard
             </h6>
           </div>
-          <div>
-            {/* <Image src={frame5} /> */}
-          </div>
+          <div>{/* <Image src={frame5} /> */}</div>
         </div>
 
         <div>
@@ -574,9 +564,7 @@ const Work = () => {
               Agent dashboard
             </h6>
           </div>
-          <div>
-            {/* <Image src={frame6} /> */}
-          </div>
+          <div>{/* <Image src={frame6} /> */}</div>
         </div>
 
         <div>
@@ -585,9 +573,7 @@ const Work = () => {
               Mobile responsiveness
             </h6>
           </div>
-          <div>
-            {/* <Image src={frame7} /> */}
-          </div>
+          <div>{/* <Image src={frame7} /> */}</div>
         </div>
       </div>
 
