@@ -14,7 +14,12 @@ import { useTheme } from 'next-themes';
 const About = () => {
   const [show, setShow] = useState(false);
   const { theme, setTheme } = useTheme();
+<<<<<<< HEAD
   const [active, setActive] = useState(false);
+=======
+  const [active, setActive] = useState(false)
+
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
 
   function changeColor(e) {
     e.target.style.color = '#EF4444';
@@ -88,8 +93,14 @@ const About = () => {
               </motion.h1>
             </div>
             {/* paragraph */}
+<<<<<<< HEAD
             <motion.div className="" variants={fadeInUp2}>
               <p
+=======
+            <div>
+              <motion.p
+                variants={fadeInUp2}
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
                 className="airbnb-cereal-medium about_p text-gray-400 dark:text-white"
                 // style={{ lineHeight: '48px', width: '750px' }}
               >
@@ -140,13 +151,21 @@ const About = () => {
         </div>
         <motion.div
           className=" mt-20 "
+<<<<<<< HEAD
           initial="hidden"
+=======
+          initial={{ opacity: 0.4 }}
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
           variants={{
             visible: { opacity: 1, scale: 1 },
+<<<<<<< HEAD
             hidden: { opacity: 0, scale: 0 },
+=======
+            hidden: { opacity: 0.5, scale: 0 },
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
           }}
         >
           <h6 className="airbnb-cereal-medium text-xl leading-9 sidebar-git dark:text-white mb-2">

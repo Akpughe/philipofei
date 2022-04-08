@@ -6,7 +6,10 @@ import BounceArrow from '../icons/BounceArrow';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Slide from 'react-reveal/Slide';
+<<<<<<< HEAD
 import Fade from 'react-reveal/Fade';
+=======
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
 import { GlassMagnifier } from 'react-image-magnifiers';
 import Magnifier from 'react-magnifier';
 
@@ -91,6 +94,7 @@ export default function Home({ works }) {
               </div>
             </div>
             {/* images */}
+<<<<<<< HEAD
             <Slide>
               <div>
                 <Magnifier
@@ -118,6 +122,36 @@ export default function Home({ works }) {
             </Slide>
             <Slide left>
               <div>
+=======
+            <div>
+              <Magnifier
+                src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg"
+                mgShape="circle"
+                zoomFactor={1.5}
+                mgBorderWidth={2}
+                mgShowOverflow={true}
+                mgMouseOffsetX={0}
+                mgMouseOffsetY={0}
+                mgTouchOffsetX={-50}
+                mgTouchOffsetY={-50}
+              />
+              {/* <img
+                src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg"
+                alt=""
+              /> */}
+              <div className="py-8">
+                <h1 className="neue-machina-ultrabold font-black font-size4">
+                  VOBB
+                </h1>
+                <p className="airbnb-cereal-medium kow dark:text-white">
+                  UX {'&'} UI Design
+                </p>
+              </div>
+            </div>
+            <Slide left>
+              <div>
+                {/* <Image src={invest} /> */}
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
                 <Magnifier
                   src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
                   mgShape="circle"
@@ -129,12 +163,23 @@ export default function Home({ works }) {
                   mgTouchOffsetX={-50}
                   mgTouchOffsetY={-50}
                 />
+<<<<<<< HEAD
                 <div className="py-8">
                   <Link href="/work/i-invest">
                     <a className="neue-machina-ultrabold font-black font-size4 dark:text-white pb-0 cursor-pointer">
                       i-invest
                     </a>
                   </Link>
+=======
+                {/* <img
+                  src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
+                  alt=""
+                /> */}
+                <div className="py-8">
+                  <h1 className="neue-machina-ultrabold font-black font-size4 dark:text-white pb-0">
+                    i-invest
+                  </h1>
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
                   <p className="airbnb-cereal-medium kow dark:text-white">
                     Product Design
                   </p>
@@ -143,6 +188,10 @@ export default function Home({ works }) {
             </Slide>
             <Slide right>
               <div className=" pt-14 ">
+<<<<<<< HEAD
+=======
+                {/* <Image src={invest} /> */}
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
                 <Magnifier
                   src="https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg"
                   mgShape="circle"
@@ -154,6 +203,7 @@ export default function Home({ works }) {
                   mgTouchOffsetX={-50}
                   mgTouchOffsetY={-50}
                 />
+<<<<<<< HEAD
                 <div className="py-8">
                   <Link href="/work/afrealone">
                     <div className="flex items-center">
@@ -165,12 +215,23 @@ export default function Home({ works }) {
                       </div>
                     </div>
                   </Link>
+=======
+                {/* <img
+                  src="https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg"
+                  alt=""
+                /> */}
+                <div className="py-8">
+                  <h1 className="neue-machina-ultrabold font-black font-size4 dark:text-white">
+                    Afreal one
+                  </h1>
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
                   <p className="airbnb-cereal-medium kow dark:text-white">
                     UX {'&'} UI Design
                   </p>
                 </div>
               </div>
             </Slide>
+<<<<<<< HEAD
             {/* images end */}
 
             {/* <div>
@@ -206,6 +267,8 @@ export default function Home({ works }) {
                 );
               })}
             </div> */}
+=======
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
           </div>
         </motion.div>
       </Layout>

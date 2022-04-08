@@ -82,6 +82,7 @@ body {
   background: #101828;
 }
 
+<<<<<<< HEAD
 .logo{
   width: 200px;
   height: 27px;
@@ -95,6 +96,8 @@ body {
   color: #344054;
 }
 
+=======
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
 .dim {
   box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
 }
@@ -282,17 +285,24 @@ body {
 
 .bgblack {
   background: #3d4852;
+<<<<<<< HEAD
 }
 
 .af_one{
   color: '#344054' 
+=======
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
 }
 
 .about_p {
   font-size: 16px;
   width: 650px;
+<<<<<<< HEAD
   line-height: 30px;
   margin-bottom: 10px;
+=======
+  line-height: 40px;
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
 }
 
 .footer {
@@ -523,6 +533,7 @@ body {
   width: 850px;
 }
 
+<<<<<<< HEAD
 .coming-soon{
 
   display: flex;
@@ -556,6 +567,8 @@ body {
   margin-bottom: 20px;
 }
 
+=======
+>>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
 /* mobile responsiveness */
 @media only screen and (max-width: 767px) {
   .font-size3 {
