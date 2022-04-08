@@ -191,14 +191,10 @@ const Work = () => {
         </div>
 
         <div className="border border-gray-500 w-full h-425 flex justify-center items-center ">
-<<<<<<< HEAD
           <img
             src="https://res.cloudinary.com/davak/image/upload/v1647608696/philip/image_2_exyklt.png"
             className=" sm:h-72 h-36 "
           />
-=======
-          <img src="https://res.cloudinary.com/davak/image/upload/v1647608696/philip/image_2_exyklt.png" className=" sm:h-72 h-36 " />
->>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
         </div>
       </div>
 
@@ -297,11 +293,7 @@ const Work = () => {
                   </li>
                 </ul>
               </div>
-<<<<<<< HEAD
               <div className="sm:mt-0 mt-4">
-=======
-              <div className='sm:mt-0 mt-4'>
->>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
                 <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8 work-p dark:text-white">
                   <li className="li">
@@ -368,11 +360,7 @@ const Work = () => {
                   </li>
                 </ul>
               </div>
-<<<<<<< HEAD
               <div className="sm:mt-0 mt-4">
-=======
-              <div className='sm:mt-0 mt-4'> 
->>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
                 <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8 work-p dark:text-white">
                   <li className="li">
@@ -423,7 +411,6 @@ const Work = () => {
 
         <div className=" border border-gray-500 w-full h-auto flex flex-col justify-center mt-12  ">
           <div className="flex justify-center sm:py-14 py-7 ">
-<<<<<<< HEAD
             <img
               className="vb-sol"
               src="https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png"
@@ -431,12 +418,6 @@ const Work = () => {
           </div>
           <div className="flex pb-4 sm:px-12 px-4 justify-start">
             <h6 className="airbnb-cereal-bold text-left text-sm leading-8 devby dark:text-white ">
-=======
-            <img className='vb-sol' src="https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png" />
-          </div>
-          <div className="flex pb-4 sm:px-12 px-4 justify-start">
-            <h6 className="airbnb-cereal-bold text-left text-sm leading-8 text-gray-800 dark:text-white ">
->>>>>>> 0334ab5630ed3ef33b4ed8958dbdd4fc9587c9ff
               The pipeline
             </h6>
           </div>
