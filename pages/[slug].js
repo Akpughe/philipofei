@@ -14,13 +14,13 @@ import DiagArrow from '../icons/DiagArrow';
 // import vobbSol from '../public/img/vobb_solution.png';
 // import vobb_userflow from '../public/img/vobb_userflow.png';
 // import vobb_userflow2 from '../public/img/vobb_userflow2.png';
-import frame1 from '../public/img/Frame 1_.svg';
-import frame2 from '../public/img/Frame 2_.svg';
-import frame3 from '../public/img/Frame 3_.svg';
-import frame4 from '../public/img/Frame 4_.svg';
-import frame5 from '../public/img/Frame 5_.svg';
-import frame6 from '../public/img/Frame 6_.svg';
-import frame7 from '../public/img/Frame 7_.svg';
+// import frame1 from '../public/img/Frame 1_.svg';
+// import frame2 from '../public/img/Frame 2_.svg';
+// import frame3 from '../public/img/Frame 3_.svg';
+// import frame4 from '../public/img/Frame 4_.svg';
+// import frame5 from '../public/img/Frame 5_.svg';
+// import frame6 from '../public/img/Frame 6_.svg';
+// import frame7 from '../public/img/Frame 7_.svg';
 
 import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
@@ -697,7 +697,7 @@ const Work = ({ page }) => {
             </h6>
           </div>
           <div>
-            <Image src={frame1} />
+            <Image src={'frame1'} />
           </div>
         </div>
 
@@ -708,7 +708,7 @@ const Work = ({ page }) => {
             </h6>
           </div>
           <div>
-            <Image src={frame2} />
+            {/* <Image src={frame2} /> */}
           </div>
         </div>
 
@@ -730,7 +730,7 @@ const Work = ({ page }) => {
             </h6>
           </div>
           <div>
-            <Image src={frame4} />
+            {/* <Image src={frame4} /> */}
           </div>
         </div>
 
@@ -741,7 +741,7 @@ const Work = ({ page }) => {
             </h6>
           </div>
           <div>
-            <Image src={frame5} />
+            {/* <Image src={frame5} /> */}
           </div>
         </div>
 
@@ -752,7 +752,7 @@ const Work = ({ page }) => {
             </h6>
           </div>
           <div>
-            <Image src={frame6} />
+            {/* <Image src={frame6} /> */}
           </div>
         </div>
 
@@ -763,7 +763,7 @@ const Work = ({ page }) => {
             </h6>
           </div>
           <div>
-            <Image src={frame7} />
+            {/* <Image src={frame7} /> */}
           </div>
         </div>
       </div>
