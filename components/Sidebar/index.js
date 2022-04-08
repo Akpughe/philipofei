@@ -13,18 +13,18 @@ const Sidebar = ({ close }) => {
 
   return (
     <>
-      <div className=" dark:bg-nature-dark bg-contain bg-no-repeat bg-center h-full">
-        <div className="flex justify-end pt-14 pr-24 pb-8 cursor-pointer">
+      <div className=" dark:bg-nature-dark bg-cover bg-no-repeat bg-center h-full">
+        <div className="flex justify-end pt-14 sm:pr-24 pr-12 pb-8 cursor-pointer">
           <div onClick={close}>
             {theme && theme === 'light' ? <Close /> : <Closewhite />}
           </div>
         </div>
-        <div className=" pl-24 ">
+        <div className=" sm:pl-24 pl-12 ">
           <div>
             <p className="airbnb-cereal-medium text-sm text-gray-400 ">Menu</p>
           </div>
           <div className="mt-3">
-            <Link href="/work">
+            <Link href="/">
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -60,12 +60,12 @@ const Sidebar = ({ close }) => {
             </motion.button>
           </div>
         </div>
-        <div className="pl-24 absolute bottom-0 pb-6">
+        <div className="sm:pl-24 pl-12 absolute bottom-0 pb-6">
           <div>
             <p className="airbnb-cereal-medium text-sm sidebar-git dark:text-white mb-2 ">
               Get in touch
             </p>
-            <h2 className="neue-machina-ultrabold text-2xl sidebar-menu1 dark:text-white  pb-1">
+            <h2 className="neue-machina-ultrabold sm:text-2xl text-xl sidebar-menu1 dark:text-white  pb-1">
               philipofei042@gmail.com
             </h2>
             <div className="sidebar-line h-0 w-full bg-black "></div>

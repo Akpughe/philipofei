@@ -68,7 +68,8 @@ const Navbar = () => {
         <div>
           <Link href="/">
             <a className="cursor-pointer">
-              <div className=" bg-logo-light dark:bg-logo-dark bg-no-repeat	bg-contain w-36 h-8 "></div>
+              {/* <div className=" bg-logo-light dark:bg-logo-dark bg-no-repeat	bg-contain w-36 h-8 "></div> */}
+              <h1 className='logo logocolor dark:text-white'>PHILIP OFEI 🚀 </h1>
               {/* <img
                 src={
                   theme === 'light'

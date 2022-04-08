@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
         <div className="sm:px-52 px-4">
           <motion.div variants={fadeInUp}>{children}</motion.div>
         </div>
-        <div className="fixed bottom-0 right-0 px-20 py-10">
+        <div className="fixed bottom-0 right-0 sm:px-20 px-0 sm:py-10 py-0">
           <Toggle />
         </div>
         <Footer />

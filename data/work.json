@@ -1,0 +1,407 @@
+[
+    {
+        "id": "1",
+        "slug": "vobb.io",
+        "project":"vobb.io",
+        "service": "UX & UI Design",
+        "role": "Lead Designer",
+        "duration": "1 month",
+        "image1":"https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg",
+        "background":"The study abroad market is a growing market in Africa, most of west Asia and central europe. Universities are now (and have been) partnering with Agents to recruit students to their institutions.",
+        "background1":"Most universities have agent portals where agents can apply for their prospects and wait for the admissions to be approved by an official of the respective university.",
+        "background2":"Basically students reach out to agents for study abroad services, the agents get their documents and apply through the respective agent portals.",
+        "background3":"This is what everyone sees, and it is true. But there is a seemingly invisible yet very strong player in the market; The Sub-Agents Sub-agents are study-abroad business owners in their respective countries that don{'’'}t have agent codes or are not directly affiliated with international universities, so they tend to partner up with agents other agents who are directly affiliated with these universities and send their student applications to the Agents.",
+        "background4":"Universities don{'’'}t grant out agent codes because they have to be sure of who they are partnering with, and it is not advisable for sub-agents that are not in the university{'’'}s country to get agent codes because then they cannot monitor the admission and help out the student after arrival.",
+        "background5":"The Universities also do not account for the sub-agents or subcontractors that their direct Agents are working with, so this leaves the direct agent with a little more work to do, like submitting applications and updating the sub-agents on status of applications, also keeping adequate records to make sure they pay sub-agents when commissions come in etc.",
+        "background6":"vobb.io is a collaborative Agents portal that allows direct agents to form partnerships with sub-agents, which in turn gives the sub-agents the same rights as direct agents.",
+        "goal":{
+            "head":"Goal is to build a marketplace to accommodate three main players;",
+            "goal1":"Student",
+            "goal2":"Agents",
+            "goal3":"Universities"
+        },
+        "breakdown":{
+            "head":"",
+            "breakdown1":"For Students; they will be able to find credible study abroad agents to work with for easy processing of their academic travels.",
+            "breakdown2":"For agents; it goes a little deeper than that, Agents can get students through Vobb and also showcase their portfolio.",
+            "breakdown3":"Think about it as Behance is to designers and Github is to developers, Vobb will be to small scale “Travel agencies”"
+        },
+        "image2_designprocess":"https://res.cloudinary.com/davak/image/upload/v1649105315/philip/image_2_lalq7b.svg",
+        "understand":{
+            "head":"Understanding the problem",
+            "p1":"Like in the background study, the study abroad agent marketplace is getting very saturated, and alot is going on in that space. There’s a saying where i come from ‘Too many hands, spoil the soup’ (especially one that cannot be properly regulated) this is a clear case of what is happening here, too many human factors has led to many cases of fraud, delay, and misery for both the students, credible agents and even Universities in some occasion.",
+            "p2":"Speaking to students and agents that are directly involved with universities, the problem cuts across the students not being able to get direct access to the main agents, because the market is saturated; there are so many con artist.",
+            "p3":"This always leads to;",
+            "list":{
+                "item1":"Fraud",
+                "item2":"Loss of money for students",
+                "item3":"Loss of prospects for university",
+                "item4":"Trust issues"
+            }
+        },
+        "user_p":{
+            "persona":"Speaking to different user groups, i was able to coin out these user personas;"
+        },
+        "user1":{
+            "img":"https://res.cloudinary.com/davak/image/upload/v1647608714/philip/mary_taylor_qhklif.png",
+            "name": "Mary Taylor, 17yrs",
+            "status":"Undergradute",
+            "bio":"Bio ️📜",
+            "p1":"Mary is a teenager from Nigeria, who just finished high school, and due to the educational standard in Nigeria, wishes to continue her graduate studies in Canada.",
+            "p2":"Over the past six months she has employed the services of different study abroad agents to help her secure this transition of gaining admission into her dream university as well as a seamless relocation processess.",
+            "p3":"This has cost her nothing but misery, she has been swindled of her money, now she has to wait for another admission window before she can start the process again resulting to waste of time.",
+            "p4":"Mary will like to have a platform where she can get direct access to a pool of credible agents that has been vetted and has direct access to her dream university.",
+            "goals":{
+                "goal1":" Wants to be able to get access to more credible agents and make her choice",
+                "goal2":"Wants to be able to trust these agents",
+                "goal3":"Wants to be able to access these agents on her phone or computer"
+            },
+            "frustration":{
+                "frustration1":"Wants to be able to get access to more credible agents and make her choice",
+                "frustration2":"Wants to be able to trust these agents",
+                "frustration3":"Wants to be able to access these agents on her phone or computer"
+            }
+        },
+        "user2":{
+            "img":"https://res.cloudinary.com/davak/image/upload/v1647608718/philip/christian_martin_bofsan.png",
+            "name": "Christain Martin, 27yrs",
+            "status":"Study Abroad Agent",
+            "bio":"Bio ️📜",
+            "p1":"Mary is a teenager from Nigeria, who just finished high school, and due to the educational standard in Nigeria, wishes to continue her graduate studies in Canada.",
+            "p2":"Over the past six months she has employed the services of different study abroad agents to help her secure this transition of gaining admission into her dream university as well as a seamless relocation processess.",
+            "p3":"This has cost her nothing but misery, she has been swindled of her money, now she has to wait for another admission window before she can start the process again resulting to waste of time.",
+            "p4":"Mary will like to have a platform where she can get direct access to a pool of credible agents that has been vetted and has direct access to her dream university.",
+            "goals":{
+                "goal1":" Wants to be able to get access to more credible agents and make her choice",
+                "goal2":"Wants to be able to trust these agents",
+                "goal3":"Wants to be able to access these agents on her phone or computer"
+            },
+            "frustration":{
+                "frustration1":"Wants to be able to get access to more credible agents and make her choice",
+                "frustration2":"Wants to be able to trust these agents",
+                "frustration3":"Wants to be able to access these agents on her phone or computer"
+            }
+        },
+        "solution":{
+            "p1":"After the understanding the problem and validation using these research methods, I start creating solutions to address these problems, prioritizing the earlier defined problems using the processes listed below.",
+            "h5":"How Vobbs plan to solve the problem",
+            "h5_p1":"Vobb is a collaborative Agents portal.",
+            "h5_p2":"Vobb allows direct agents to form partnerships with sub-agents, which in turn gives the sub-agents the same rights as direct agents.",
+            "h5_p3":"This way, Subagents can submit applications themselves directly to the universities, the direct agents can spend less time filling applications.",
+            "h5_p4":"And if the direct agent's recruitment process depends entirely on sub-agents, then the direct agent does not have to do anything anymore.",
+            "image":"https://res.cloudinary.com/davak/image/upload/v1647608866/philip/vobb_solution_xlqk6s.png",
+            "image_text":"The pipeline",
+            "university":{
+                "head":"The University",
+                "p1":"For agents to send applications through Vobb, there needs to be an integration between Vobb and the school's existing systems. Vobb basically becomes a substitute to all universities existing Agent portal",
+                "p2":"A university admin will manage the University or institutions account on Vobb. The university admin will have the following rights;",
+                "p3":"Setting up profile",
+                "p4":"Accepting / declining activation requests from Agents (Activation requests will be explained under ‘Agents’)",
+                "p5":"Viewing incoming applications and general statistics",
+                "p6":"When an agent submits an application on vobb, Vobb submits that application on the universities enrollment or admission system indicating the direct agent the application is from. Just like the university's existing agent portals.",
+                "p7":"University admins can also view applications on Vobb."
+            },
+            "agent":{
+                "head":"The Agent",
+                "p1":"For agents to send applications through Vobb, there needs to be an integration between Vobb and the school's existing systems. Vobb basically becomes a substitute to all universities existing Agent portal",
+                "p2":"A university admin will manage the University or institutions account on Vobb. The university admin will have the following rights;",
+                "p3":"Setting up profile",
+                "p4":"Accepting / declining activation requests from Agents (Activation requests will be explained under ‘Agents’)",
+                "p5":"Viewing incoming applications and general statistics",
+                "p6":"When an agent submits an application on vobb, Vobb submits that application on the universities enrollment or admission system indicating the direct agent the application is from. Just like the university's existing agent portals.",
+                "p7":"University admins can also view applications on Vobb."
+            }
+        },
+        "infoArch":{
+            "h1":"",
+            "p1":"",
+            "p2":"",
+            "img1":"",
+            "img2":""
+        },
+        "flowChart":{
+            "h1":"",
+            "p1":"",
+            "img1":"",
+            "img2":"",
+            "img3":"",
+            "img4":""
+        },
+        "user_flow":{
+            "h2":"User Flow",
+            "img1":"https://res.cloudinary.com/davak/image/upload/v1647534528/philip/image_121_z88ycv.svg",
+            "img2":"https://res.cloudinary.com/davak/image/upload/v1647534624/philip/image_120_yhocy1.svg"
+        },
+        "HifiPrototypes":{
+            "p":"",
+            "h5":"",
+            "img":"",
+            "h5_i":"",
+            "img1":"",
+            "h5_ii":"",
+            "img2":"",
+            "h5_iii":"",
+            "img3":"",
+            "h5_iv":"",
+            "img_4":""
+        },
+        "conclusion":{
+            "p1":"I love beign a designer because it allows me to explore different perspective of people’s lives, understanding their challenges, frustrations and in the long run be able to provide solutions and make their lives alot easier. Working on this product was challenging because i had to understand not just one market, speaking to people from different continent and also putting into perspective their problems. i spoke to the stakeholders extensively during the course of building and we were always in sync, making sure we were not derailing from our MVP because theres actually alot of scenario at play here.",
+            "p2":"This was the first draft of VOBB.IO, even tho due to so many iterations, research and brainstorming, vobbs has evolved to a more robust platform than what i currently showed here, i was glad i was part of the early stages.",
+            "p3": "Thanks for reading❤️... Hope you enjoyed  it as much as i did creating it"
+        }
+    },
+    {
+        "id": "2",
+        "slug": "i-invest",
+        "project":"i-invest",
+        "service": "UX & UI Design",
+        "role": "Lead Designer",
+        "duration": "1 month",
+        "image1":"https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg",
+        "background":"i-invest is Nigeria’s foremost digital platform for Treasury Bills, and now the preferred financial services marketplace in Africa that gives you access to investment opportunities from various financial service providers within one safe & secure platform.",
+        "background1":"Simply put, i-invest enables you to grow the money that you have worked hard for, by making the money work for you.",
+        "background2":"Enjoy real-time access to an array of products like Treasury bills, Fixed deposit notes, Commercial papers, Eurobonds, Equities, insurance, curated savings plans and more, conveniently from your phone, anywhere in the world.",
+        "background3":"No paperwork, no bank queues, no broker required.",
+        "goal":{
+            "head":"The goal for i-invest is to build an investment platform that can sort every financial needs for its users, in this case we built both native and web applications, this is as a result of the target audience, a cross-functional platform will allow unlimited access anywhere and everywhere in the world.",
+            "goal1":"",
+            "goal2":"",
+            "goal3":"",
+            "goal4":"",
+            "goal5":""
+        },
+        "breakdown":{
+            "head":"",
+            "breakdown1":"Build a strong portfolio by choosing from a variety of financial products like Treasury bills, Fixed deposit notes, Commercial papers, Eurobonds, Equities, Insurance, currated savings plans and more.",
+            "breakdown2":"Track your investment portfolio performance on the go and access everything you need directly from your mobile phone anywhere in the world.",
+            "breakdown3":"Top up, withdraw, and transfer funds to family and friends on i-invest, from your wallet.",
+            "breakdown4":"Invest safely & securely with bank-level security, end-to-end encryption protocols, two-factor authentication (2FA) protection and other cutting-edge security technologies.",
+            "breakdown5":"Stay informed on financial trends with real-time update on market trends, and everything happening with the financial industry."
+        },
+        "image2_designprocess":"https://res.cloudinary.com/davak/image/upload/v1649105482/philip/image_31_srmexo.svg",
+        "understand":{
+            "head":"Empatihising with users",
+            "p1":"We conducted series of interviews with dieferent group of users, trying to understand how they have been investing both offline and online, our demographics were people inbetween the age of 31-35 years as our primary traget and 26-30 years as our secondary target. For easy onboarding they are required to have basic understanding of investing and be technology literate.",
+            "p2":"The reason we chose these demoghraphics; especially for the age bracket, after speaking to our users and some secondary research and competitor analysis, we understand the people willing to make long term investments are those who are middle aged, a little bit stable in their income, and are looking to build passive income.",
+            "p3":"",
+            "list":{
+                "item1":"",
+                "item2":"",
+                "item3":""
+            }
+        },
+        "user_p":{
+            "persona":"We combined different data from research and conversations we had with a group of users"
+        },
+        "user1":{
+            "img":"https://res.cloudinary.com/davak/image/upload/v1649106914/philip/Rectangle_1890_wty8nf.png",
+            "name": "Lotanna, 32yrs",
+            "status":"Software engineer",
+            "p1":"Lotanna is a middle-aged and young affluent individual who loves to travel for business and pleasure.",
+            "p2":"He is seeking access to investment opportunities in order to achieve his financial goals and meet immediate family needs.",
+            "p3":"He is a techie and investment savvy, so he is looking for a one-stop-shop with an array of competitive financial products to keep his finances safe & secure while delivering optimal user experience",
+            "goals":{
+                "goal1":"To conveniently manage his finances with 24/7 access to execute financial transactions even when he is out of the country",
+                "goal2":"Achieve his financial goals with minimal effort at a relatively high ROI",
+                "goal3":"Access to real-time financial advisory in order to always make informed decisions",
+                "goal4":"Complicated transaction processes",
+                "goal5":"Inadequate access to real-time financial news • Fraudulent investment companies",
+                "goal6":"Low interest rates"
+            },
+            "frustration":{
+                "frustration1":"Difficulty in tracking investments across multiple platforms",
+                "frustration2":"Not being able to read investment thread because of too much charts and graphs",
+                "frustration3":"Not being able to make a decision, no tailored news channels"
+            }
+        },
+        "user2":{
+            "img":"https://res.cloudinary.com/davak/image/upload/v1649106929/philip/unsplash_R8kIwcdo_10_oc5w5r.png",
+            "name": "Justine, 34yrs",
+            "status":"Entrepreneur",
+            "p1":"Justine is a Tech-savvy serial Businesswoman and a mother of 3. She runs 3 businesses in the Fashion and Hospitality sectors (with support from her husband) and is seeking access to investment opportunities to sustain and grow her busniessess, achieve her expantion goals and support her family despite her extremely busy schedule",
+            "p2":"",
+            "p3":"",
+            "goals":{
+                "goal1":"To conveniently manage her finances with 24/7 access to execute financial transactions",
+                "goal2":"To acheive her short and long term business expansion goals",
+                "goal3":"Gain access to low interest loans and high interest investment opportunities",
+                "goal4":"Access to real-time business advisory in order to stay ahead in her business engagements",
+                "goal5":"To secure her business legacy"
+            },
+            "frustration":{
+                "frustration1":"Infrequent flow of income",
+                "frustration2":"Inability to afford long-term investments due to increased liquidity demands",
+                "frustration3":"Fraudulent investment companies",
+                "frustration4":"Complicated technical investment linguals"
+            }
+        },
+        "solution":{
+            "p1":"We have created a product to meet all the needs of our target users appropriately; Just like the tagline for the product Invest securely anytime, anywhere!",
+            "h5":"",
+            "h5_p1":"We built a mobile application which allows current and aspiring investors purchase securities and other related instruments without the aid of a broker.",
+            "h5_p2":"In addition, the application provides a seamles user interface that allows tracking diverse investment portfolios, provides a convenient way for retail investors to save money whilst earning attractive interest rates, and allowing retail investors to help fund infrastructure projects in Nigeria whilst earning an income.",
+            "image":"",
+            "university":{
+                "p1":"",
+                "p2":"",
+                "p3":"",
+                "p4":"",
+                "p5":"",
+                "p6":"",
+                "p7":""
+            },
+            "agent":{
+                "p1":"",
+                "p2":"",
+                "p3":"",
+                "p4":"",
+                "p5":"",
+                "p6":"",
+                "p7":""
+            }
+        },
+        "infoArch":{
+            "h1":"Information architecture",
+            "p1":"i created an information architecture, sighting every aspect of the i-invest application; this will enable me to not skip any aspect of the app when designing and this gives the application proper structure in terms of hierachy, navigation and nomencleture.",
+            "p2":"This architecture will work for both web and mobile applications.",
+            "img1":"https://res.cloudinary.com/davak/image/upload/v1649192564/philip/Group_48095344_lhf8md.svg",
+            "img2":"https://res.cloudinary.com/davak/image/upload/v1649192601/philip/Group_48095345_lwqgoc.svg"
+        },
+        "flowChart":{
+            "h1":"Flow chart",
+            "p1":"Some core business logic.",
+            "img1":"https://res.cloudinary.com/davak/image/upload/v1649194238/philip/Group_48095348_g9obcz.svg",
+            "img2":"https://res.cloudinary.com/davak/image/upload/v1649194259/philip/Group_48095347_iuph7b.svg",
+            "img3":"https://res.cloudinary.com/davak/image/upload/v1649194275/philip/Group_48095349_fagtss.svg",
+            "img4":"https://res.cloudinary.com/davak/image/upload/v1649194290/philip/Group_48095350_u8xd2m.svg"
+        },
+        "HifiPrototypes":{
+            "p1":"Walkthrough some highfidelity screens",
+            "p1_":"For the highfidelity prototype, we adopted the Pegasus design system to our brand guidelines and used iconly2 for our icons.",
+            "h5_1":"Website",
+            "img1":"",
+            "h5_2":"Mobile application ",
+            "h5_2i":"Splash screen & Onboarding",
+            "p2":"Created a simple flow for the onboarding to quickly introduce the users into the the benefit of using the app, giving them the option to simply read through or skip if they want to.",
+            "img2":"",
+            "h5_2ii":"Registration and Login",
+            "p3":"We created an experience with easy to fill forms, that allows quick onboarding of users. ",
+            "img3":"",
+            "img4":"",
+            "dash_h5":"",
+            "dash_p":"",
+            "dash_img":"",
+            "h5_2iii":"Other mobile app screens",
+            "p4":"Showing other aspect of the mobile experience",
+            "img5":"",
+            "h5_2iv":"Web App screens",
+            "p5":"I made sure the web application work as closely as the mobile app, so the experience is the same, you can move from the mobile app to the web app and expereience and seamless transition",
+            "img6":"",
+            "img7":"",
+            "h5_2v":"Mobile Web Responsivenes",
+            "p6":"Designed mobile responsive screens for the web app to ensure the experience is optimized for the multiple cross functional platforms",
+            "img8":""
+        },
+        "conclusion":{
+            "p1":"I have gained so much  experience working on i-invest, the daily interaction with the development team, getting users feedback and also feedback from the stakeholders, it has been both sweet and not so sweet experience. Currently i-invest is among one of the investment and savings platform in Nigeria.",
+            "p2":"Currently i-invest has over 100k downloads on appstore and play store, and resolved over 44k transactions with a ROI of over 16b naira in 2021, surpasing the best year (2020) since inception.",
+            "p3":"You can download and check out i-invest on all platforms",
+            "p4":"Thanks for reading ❤️ ... Hope you enjoyed  it as much as i did creating it"
+        }
+        
+        
+    },
+    {
+        "id": "3",
+        "slug": "afreal-one",
+        "project":"Afreal one",
+        "service": "UX & UI Design",
+        "role": "Lead Designer",
+        "duration": "1 month",
+        "image1":"https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg",
+        "background":"",
+        "goal":{
+            "head":"",
+            "goal1":"",
+            "goal2":"",
+            "goal3":""
+        },
+        "breakdown":{
+            "head":"",
+            "breakdown1":"",
+            "breakdown2":"",
+            "breakdown3":""
+        },
+        "image2_designprocess":"",
+        "understand":{
+            "p1":"",
+            "p2":"",
+            "p3":"",
+            "list":{
+                "item1":"",
+                "item2":"",
+                "item3":""
+            }
+        },
+        "user1":{
+            "name": "",
+            "status":"",
+            "p1":"",
+            "p2":"",
+            "p3":"",
+            "goals":{
+                "goal1":"",
+                "goal2":"",
+                "goal3":""
+            },
+            "frustration":{
+                "frustration1":"",
+                "frustration2":"",
+                "frustration3":""
+            }
+        },
+        "user2":{
+            "name": "",
+            "status":"",
+            "p1":"",
+            "p2":"",
+            "p3":"",
+            "goals":{
+                "goal1":"",
+                "goal2":"",
+                "goal3":""
+            },
+            "frustration":{
+                "frustration1":"",
+                "frustration2":"",
+                "frustration3":""
+            }
+        },
+        "solution":{
+            "p1":"",
+            "h5":"",
+            "h5_p1":"",
+            "h5_p2":"",
+            "image":"",
+            "university":{
+                "p1":"",
+                "p2":"",
+                "p3":"",
+                "p4":"",
+                "p5":"",
+                "p6":"",
+                "p7":""
+            },
+            "agent":{
+                "p1":"",
+                "p2":"",
+                "p3":"",
+                "p4":"",
+                "p5":"",
+                "p6":"",
+                "p7":""
+            }
+        }
+    }
+]

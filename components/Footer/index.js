@@ -7,7 +7,7 @@ const Footer = () => {
   const { theme, setTheme } = useTheme();
   return (
     <div className="footer sm:px-52 px-4 flex flex-col justify-center">
-      <div className="flex items-center mb-12">
+      <div className="flex items-center sm:mb-12 mb-4">
         <h1 className="neue-machina-ultrabold font-size3 leading-tight">
           <p className="">Ready to start a new project?</p>
           <p className="text-gray-400">👉🏼 philipofei042@gmail.com</p>
@@ -15,8 +15,8 @@ const Footer = () => {
       </div>
       <div className="">
         <div className=" h-5p w-full bg-black dark:bg-gray-800 mb-4 "></div>
-        <div className="flex justify-between text-sm">
-          <div>
+        <div className="flex sm:flex-row flex-col justify-between  text-sm">
+          <div className='sm:mb-0 mb-2'>
             © <span className="font-bold airbnb-cereal-bold">2022</span> -{' '}
             <span className="font-bold airbnb-cereal-bold  dark:text-gray-500">Philip Ofei,</span> {' '}
             <span className="devby airbnb-cereal-medium  dark:text-white">Developed by</span> {' '}
