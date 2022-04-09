@@ -92,7 +92,7 @@ export default function Home({}) {
             </div>
             {/* images */}
             <Slide>
-              <div>
+              <div className='pb-16'>
                 <Magnifier
                   src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg"
                   mgShape="circle"
