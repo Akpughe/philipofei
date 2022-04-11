@@ -47,6 +47,20 @@ const ArrowSvg = () => {
   );
 };
 
+const keyStr =
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8+OZ/PQAIzwNNh5rHGAAAAABJRU5ErkJggg==';
+
+const triplet = (e1, e2, e3) =>
+  keyStr.charAt(e1 >> 2) +
+  keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+  keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+  keyStr.charAt(e3 & 63);
+
+const rgbDataURL = (r, g, b) =>
+  `data:image/gif;base64,R0lGODlhAQABAIAAAP${
+    triplet(0, r, g) + triplet(b, 255, 255)
+  }/wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==`;
+
 const Vobb = () => {
   const { theme, setTheme } = useTheme();
 
@@ -109,18 +123,24 @@ const Vobb = () => {
         </div>
       </motion.div>
 
-      <motion.div  initial={{ opacity: '0' }}
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0.5, scale: 0 },
-          }} className=" mb-24 ">
+      <motion.div
+        initial={{ opacity: '0' }}
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0.5, scale: 0 },
+        }}
+        className=" mb-24 "
+      >
         <Image
           src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg"
           width={1024}
           height={636}
+          placeholder="blur"
+          blurDataURL={rgbDataURL(225, 236, 255)}
+          priority
         />
       </motion.div>
 
@@ -283,6 +303,9 @@ const Vobb = () => {
             className=" sm:h-72 h-36 "
             width={756}
             height={288}
+            placeholder="blur"
+            blurDataURL={rgbDataURL(225, 236, 255)}
+            priority
           />
         </motion.div>
       </div>
@@ -755,7 +778,14 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399806/philip/Frame_1__mtdxct.svg" width={1024} height={803}/>
+            <Image
+              src="https://res.cloudinary.com/davak/image/upload/v1649399806/philip/Frame_1__mtdxct.svg"
+              width={1024}
+              height={803}
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
+            />
           </div>
         </div>
 
@@ -766,7 +796,14 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399045/philip/Frame_2__ts2so3.svg" width={1024} height={803}/>
+            <Image
+              src="https://res.cloudinary.com/davak/image/upload/v1649399045/philip/Frame_2__ts2so3.svg"
+              width={1024}
+              height={803}
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
+            />
           </div>
         </div>
 
@@ -777,7 +814,14 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399458/philip/Frame_3__vqvbyv.svg" width={1024} height={803}/>
+            <Image
+              src="https://res.cloudinary.com/davak/image/upload/v1649399458/philip/Frame_3__vqvbyv.svg"
+              width={1024}
+              height={803}
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
+            />
           </div>
         </div>
 
@@ -788,7 +832,14 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399209/philip/Frame_4__m18j69.svg" width={1024} height={803}/>
+            <Image
+              src="https://res.cloudinary.com/davak/image/upload/v1649399209/philip/Frame_4__m18j69.svg"
+              width={1024}
+              height={803}
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
+            />
           </div>
         </div>
 
@@ -799,7 +850,14 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399433/philip/Frame_5__u7qlof.svg" width={1024} height={803}/>
+            <Image
+              src="https://res.cloudinary.com/davak/image/upload/v1649399433/philip/Frame_5__u7qlof.svg"
+              width={1024}
+              height={803}
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
+            />
           </div>
         </div>
 
@@ -810,7 +868,14 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399306/philip/Frame_6__ngmimh.svg" width={1024} height={803}/>
+            <Image
+              src="https://res.cloudinary.com/davak/image/upload/v1649399306/philip/Frame_6__ngmimh.svg"
+              width={1024}
+              height={803}
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
+            />
           </div>
         </div>
 
@@ -821,7 +886,14 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399791/philip/Frame_7__v3w4ya.svg" width={1024} height={803}/>
+            <Image
+              src="https://res.cloudinary.com/davak/image/upload/v1649399791/philip/Frame_7__v3w4ya.svg"
+              width={1024}
+              height={803}
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
+            />
           </div>
         </div>
       </div>
