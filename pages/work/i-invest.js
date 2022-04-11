@@ -46,6 +46,19 @@ const ArrowSvg = () => {
     </svg>
   );
 };
+const keyStr =
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8+OZ/PQAIzwNNh5rHGAAAAABJRU5ErkJggg==';
+
+const triplet = (e1, e2, e3) =>
+  keyStr.charAt(e1 >> 2) +
+  keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+  keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+  keyStr.charAt(e3 & 63);
+
+const rgbDataURL = (r, g, b) =>
+  `data:image/gif;base64,R0lGODlhAQABAIAAAP${
+    triplet(0, r, g) + triplet(b, 255, 255)
+  }/wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==`;
 
 const Invest = () => {
   const { theme, setTheme } = useTheme();
@@ -125,6 +138,9 @@ const Invest = () => {
           src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
           width={1024}
           height={636}
+          placeholder="blur"
+          blurDataURL={rgbDataURL(225, 236, 255)}
+          priority
         />
       </motion.div>
 
@@ -273,6 +289,9 @@ const Invest = () => {
             className=" sm:h-72 h-36 "
             width={768}
             height={288}
+            placeholder="blur"
+            blurDataURL={rgbDataURL(225, 236, 255)}
+            priority
           />
         </motion.div>
       </div>
@@ -663,7 +682,9 @@ const Invest = () => {
               width={1024}
               height={803}
               src="https://res.cloudinary.com/davak/image/upload/v1649323762/philip/Frame_23_bqm9gk.png"
-              alt=""
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
             />
           </div>
         </div>
@@ -687,7 +708,9 @@ const Invest = () => {
               width={1024}
               height={418}
               src="https://res.cloudinary.com/davak/image/upload/v1649323456/philip/Group_48095351_wn0plj.svg"
-              alt=""
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
             />
           </div>
           <h6 className="airbnb-cereal-bold text-base ls2 devby dark:text-white leading-8 mt-14">
@@ -702,13 +725,19 @@ const Invest = () => {
               width={1024}
               height={500}
               src="https://res.cloudinary.com/davak/image/upload/v1649322701/philip/Group_48095355_fk26n4.svg"
-              alt=""
+              alt="image"
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
             />
             <Image
               width={1024}
               height={544}
               src="https://res.cloudinary.com/davak/image/upload/v1649323247/philip/Group_48095356_dmbits.svg"
-              alt=""
+              alt="image"
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
             />
           </div>
         </div>
@@ -732,7 +761,7 @@ const Invest = () => {
               // width={883}
               // height={799}
               src="https://res.cloudinary.com/davak/image/upload/c_scale,h_885,w_1000/v1649261656/philip/Samsung_Galaxy_Note_20_Ultra_czj0bw.svg"
-              alt=""
+              alt="image"
               style={{ transform: 'scale(1.2)' }}
             />
           </div>
@@ -750,7 +779,10 @@ const Invest = () => {
               width={1024}
               height={868}
               src="https://res.cloudinary.com/davak/image/upload/v1649323851/philip/Frame_24_twd0xv.png"
-              alt=""
+              alt="image"
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
             />
           </div>
         </div>
@@ -765,18 +797,26 @@ const Invest = () => {
             the web app and expereience and seamless transition
           </p>
           <div className="mt-8">
+            <div className="mb-20">
             <Image
               width={1024}
               height={292}
               src="https://res.cloudinary.com/davak/image/upload/v1649323171/philip/Group_48095370_itdsel.svg"
-              alt=""
+              alt="image"
               className="mb-20"
+                placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
             />
+            </div>
             <Image
               width={1024}
               height={868}
               src="https://res.cloudinary.com/davak/image/upload/v1649322704/philip/Frame_25_j42p8e.svg"
-              alt=""
+              alt="image"
+                placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
             />
           </div>
         </div>
@@ -794,8 +834,11 @@ const Invest = () => {
               width={1024}
               height={868}
               src="https://res.cloudinary.com/davak/image/upload/v1649323300/philip/Frame_26_ma1a51.svg"
-              alt=""
+              alt="image"
               className="mb-20"
+              placeholder="blur"
+              blurDataURL={rgbDataURL(225, 236, 255)}
+              priority
             />
           </div>
         </div>

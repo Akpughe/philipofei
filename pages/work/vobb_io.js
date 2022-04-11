@@ -817,7 +817,7 @@ const Vobb = () => {
             <Image
               src="https://res.cloudinary.com/davak/image/upload/v1649399458/philip/Frame_3__vqvbyv.svg"
               width={1024}
-              height={803}
+              height={700}
               placeholder="blur"
               blurDataURL={rgbDataURL(225, 236, 255)}
               priority
@@ -889,7 +889,7 @@ const Vobb = () => {
             <Image
               src="https://res.cloudinary.com/davak/image/upload/v1649399791/philip/Frame_7__v3w4ya.svg"
               width={1024}
-              height={803}
+              height={700}
               placeholder="blur"
               blurDataURL={rgbDataURL(225, 236, 255)}
               priority

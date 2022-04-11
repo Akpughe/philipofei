@@ -48,7 +48,21 @@ const ArrowSvg = () => {
   );
 };
 
-const Invest = () => {
+const keyStr =
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8+OZ/PQAIzwNNh5rHGAAAAABJRU5ErkJggg==';
+
+const triplet = (e1, e2, e3) =>
+  keyStr.charAt(e1 >> 2) +
+  keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+  keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+  keyStr.charAt(e3 & 63);
+
+const rgbDataURL = (r, g, b) =>
+  `data:image/gif;base64,R0lGODlhAQABAIAAAP${
+    triplet(0, r, g) + triplet(b, 255, 255)
+  }/wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==`;
+
+const Afreal = () => {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -119,19 +133,24 @@ const Invest = () => {
         </div>
       </motion.div>
 
-      <div className=" mb-24 ">
-        <motion.img
-          initial={{ opacity: '0' }}
+      <motion.div  initial={{ opacity: '0' }}
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
           variants={{
             visible: { opacity: 1, scale: 1 },
             hidden: { opacity: 0.5, scale: 0 },
-          }}
+          }} className=" mb-24 ">
+        <Image
+          
           src="https://res.cloudinary.com/davak/image/upload/v1647386739/philip/Frame_1717_fuobty.svg"
+          width={1024}
+          height={636}
+          placeholder="blur"
+          blurDataURL={rgbDataURL(225, 236, 255)}
+          priority
         />
-      </div>
+      </motion.div>
 
       <div className="flex mt-32">
         {/* 1 */}
@@ -164,4 +183,4 @@ const Invest = () => {
   );
 };
 
-export default Invest;
+export default Afreal;
