@@ -15,7 +15,6 @@ import DiagArrow from '../../icons/DiagArrow';
 // import vobb_userflow from '../public/img/vobb_userflow.png';
 // import vobb_userflow2 from '../public/img/vobb_userflow2.png';
 
-
 import { useTheme } from 'next-themes';
 import { motion } from 'framer-motion';
 
@@ -32,14 +31,14 @@ const ArrowSvg = () => {
     >
       <path
         d="M5.83325 14.6668L14.1666 6.3335"
-        stroke={theme === 'light' ? "#344054" : '#fff'}
+        stroke={theme === 'light' ? '#344054' : '#fff'}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M5.83325 6.3335H14.1666V14.6668"
-        stroke={theme === 'light' ? "#344054" : '#fff'}
+        stroke={theme === 'light' ? '#344054' : '#fff'}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -67,7 +66,7 @@ const Invest = () => {
         <h1 className="neue-machina-ultrabold text-7xl mb-10 ">i-invest</h1>
         <div className=" h-1 w-full bg-black dark:bg-white mb-4 "></div>
 
-        <div className="flex justify-between">
+        <div className="flex flex-wrap justify-between">
           <div className="flex">
             <div className="mr-14">
               <h4 className="airbnb-cereal-bold dark:text-white font-bold grey-work mb-1">
@@ -95,9 +94,14 @@ const Invest = () => {
             </div>
           </div>
 
-          <div className="flex">
-            <motion.a whileHover={{ scale: 1.1 }} href='https://i-investng.com/'   target="_blank"
-              rel="noreferrer" className="airbnb-cereal-bold dark:text-white font-bold mr-2 cursor-pointer grey-work">
+          <div className="flex sm:mt-0 mt-6">
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              href="https://i-investng.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="airbnb-cereal-bold dark:text-white font-bold mr-2 cursor-pointer grey-work"
+            >
               Visit website
             </motion.a>{' '}
             <ArrowSvg />
@@ -106,19 +110,23 @@ const Invest = () => {
         </div>
       </motion.div>
 
-      <div className=" mb-24 ">
-        <motion.img
-          initial={{ opacity: '0' }}
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0.5, scale: 0 },
-          }}
+      <motion.div
+        initial={{ opacity: '0' }}
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0.5, scale: 0 },
+        }}
+        className=" mb-24 "
+      >
+        <Image
           src="https://res.cloudinary.com/davak/image/upload/v1647386012/philip/Group_289_pcqdzv.svg"
+          width={1024}
+          height={636}
         />
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: '0' }}
@@ -249,20 +257,24 @@ const Invest = () => {
           <div className=" h-5p w-14 bgblack dark:bg-white "></div>
         </div>
 
-        <div className="border border-gray-500 w-full h-425 flex justify-center items-center ">
-          <motion.img
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0.5, scale: 0 },
+          }}
+          className="border border-gray-500 w-full h-425 flex justify-center items-center "
+        >
+          <Image
             src="https://res.cloudinary.com/davak/image/upload/v1649105482/philip/image_31_srmexo.svg"
             className=" sm:h-72 h-36 "
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            variants={{
-              visible: { opacity: 1, scale: 1 },
-              hidden: { opacity: 0.5, scale: 0 },
-            }}
+            width={768}
+            height={288}
           />
-        </div>
+        </motion.div>
       </div>
 
       <motion.div
@@ -382,12 +394,16 @@ const Invest = () => {
                     Access to real-time financial advisory in order to always
                     make informed decisions
                   </li>
-                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Complicated transaction processes</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+                    Complicated transaction processes
+                  </li>
                   <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Inadequate access to real-time financial news • Fraudulent
                     investment companies
                   </li>
-                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Low interest rates</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+                    Low interest rates
+                  </li>
                 </ul>
               </div>
               <div className="sm:mt-0 mt-4">
@@ -465,18 +481,24 @@ const Invest = () => {
                     Access to real-time business advisory in order to stay ahead
                     in her business engagements
                   </li>
-                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>To secure her business legacy</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+                    To secure her business legacy
+                  </li>
                 </ul>
               </div>
               <div className="sm:mt-0 mt-4">
                 <h6 className="airbnb-cereal-bold text-xs">Frustrations ☹️</h6>
                 <ul className="airbnb-cereal-light text-sm leading-7  max-w-sm pl-8 work-p dark:text-white">
-                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Infrequent flow of income</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+                    Infrequent flow of income
+                  </li>
                   <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Inability to afford long-term investments due to increased
                     liquidity demands
                   </li>
-                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Fraudulent investment companies</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+                    Fraudulent investment companies
+                  </li>
                   <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Complicated technical investment linguals
                   </li>
@@ -637,7 +659,9 @@ const Invest = () => {
             </h6>
           </div>
           <div>
-            <img
+            <Image
+              width={1024}
+              height={803}
               src="https://res.cloudinary.com/davak/image/upload/v1649323762/philip/Frame_23_bqm9gk.png"
               alt=""
             />
@@ -659,7 +683,9 @@ const Invest = () => {
             </p>
           </div>
           <div>
-            <img
+            <Image
+              width={1024}
+              height={418}
               src="https://res.cloudinary.com/davak/image/upload/v1649323456/philip/Group_48095351_wn0plj.svg"
               alt=""
             />
@@ -672,18 +698,22 @@ const Invest = () => {
             onboarding of users.
           </p>
           <div className="mt-8">
-            <img
+            <Image
+              width={1024}
+              height={500}
               src="https://res.cloudinary.com/davak/image/upload/v1649322701/philip/Group_48095355_fk26n4.svg"
               alt=""
             />
-            <img
+            <Image
+              width={1024}
+              height={544}
               src="https://res.cloudinary.com/davak/image/upload/v1649323247/philip/Group_48095356_dmbits.svg"
               alt=""
             />
           </div>
         </div>
 
-        <div className="flex items-center mt-14 mb-20">
+        <div className="flex sm:flex-row flex-col items-center mt-14 mb-20">
           <div className=" max-w-md flex-1 ">
             <h6 className="airbnb-cereal-medium text-base ls2 devby dark:text-white leading-8 mt-8 mb-4">
               Dashboard
@@ -699,6 +729,8 @@ const Invest = () => {
           </div>
           <div className="flex-1 -ml-40 ">
             <img
+              // width={883}
+              // height={799}
               src="https://res.cloudinary.com/davak/image/upload/c_scale,h_885,w_1000/v1649261656/philip/Samsung_Galaxy_Note_20_Ultra_czj0bw.svg"
               alt=""
               style={{ transform: 'scale(1.2)' }}
@@ -714,7 +746,9 @@ const Invest = () => {
             Showing other aspect of the mobile experience
           </p>
           <div className="mt-8">
-            <img
+            <Image
+              width={1024}
+              height={868}
               src="https://res.cloudinary.com/davak/image/upload/v1649323851/philip/Frame_24_twd0xv.png"
               alt=""
             />
@@ -731,12 +765,16 @@ const Invest = () => {
             the web app and expereience and seamless transition
           </p>
           <div className="mt-8">
-            <img
+            <Image
+              width={1024}
+              height={292}
               src="https://res.cloudinary.com/davak/image/upload/v1649323171/philip/Group_48095370_itdsel.svg"
               alt=""
               className="mb-20"
             />
-            <img
+            <Image
+              width={1024}
+              height={868}
               src="https://res.cloudinary.com/davak/image/upload/v1649322704/philip/Frame_25_j42p8e.svg"
               alt=""
             />
@@ -752,7 +790,9 @@ const Invest = () => {
             experience is optimized for the multiple cross functional platforms
           </p>
           <div className="mt-8">
-            <img
+            <Image
+              width={1024}
+              height={868}
               src="https://res.cloudinary.com/davak/image/upload/v1649323300/philip/Frame_26_ma1a51.svg"
               alt=""
               className="mb-20"
@@ -795,9 +835,9 @@ const Invest = () => {
         </p>
       </div>
 
-      <div className="flex mt-32">
+      <div className="flex sm:flex-row flex-col mt-32">
         {/* 1 */}
-        <div className="mr-10">
+        <div className="sm:mr-10 mr-0 sm:mb-0 mb-10">
           <Link href="/work/vobb_io">
             <motion.a
               whileHover={{ scale: 0.9 }}
@@ -821,7 +861,7 @@ const Invest = () => {
         </div>
         <div>
           {/* 2 */}
-          <Link href='/work/afrealone'>
+          <Link href="/work/afrealone">
             <motion.a
               whileHover={{ scale: 0.9 }}
               whileTap={{ scale: 1.0 }}

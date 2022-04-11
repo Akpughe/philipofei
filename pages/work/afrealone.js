@@ -77,7 +77,7 @@ const Invest = () => {
         </div>
         <div className=" h-1 w-full bg-black dark:bg-white mb-4 "></div>
 
-        <div className="flex justify-between">
+        <div className="flex flex-wrap justify-between">
           <div className="flex">
             <div className="mr-14">
               <h4 className="airbnb-cereal-bold font-bold dark:text-white grey-work mb-1">
@@ -103,7 +103,7 @@ const Invest = () => {
             </div>
           </div>
 
-          <div className="flex">
+          <div className="flex sm:mt-0 mt-6">
             <motion.a
             whileHover={{ scale: 1.1 }}
               href="https://www.afreal.com/"

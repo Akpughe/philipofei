@@ -66,7 +66,7 @@ const Vobb = () => {
         <h1 className="neue-machina-ultrabold text-7xl mb-10 ">vobb.io</h1>
         <div className=" h-1 w-full bg-black dark:bg-white mb-4 "></div>
 
-        <div className="flex justify-between">
+        <div className="flex flex-wrap justify-between">
           <div className="flex">
             <div className="mr-14">
               <h4 className="airbnb-cereal-bold font-bold dark:text-white grey-work mb-1">
@@ -94,7 +94,7 @@ const Vobb = () => {
             </div>
           </div>
 
-          <div className="flex">
+          <div className="flex sm:mt-0 mt-6">
             <a
               href="https://vobb.io/"
               target="_blank"
@@ -109,19 +109,20 @@ const Vobb = () => {
         </div>
       </motion.div>
 
-      <div className=" mb-24 ">
-        <motion.img
-          initial={{ opacity: '0' }}
+      <motion.div  initial={{ opacity: '0' }}
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
           variants={{
             visible: { opacity: 1, scale: 1 },
             hidden: { opacity: 0.5, scale: 0 },
-          }}
+          }} className=" mb-24 ">
+        <Image
           src="https://res.cloudinary.com/davak/image/upload/v1647261272/philip/Group_288_nxfl88.svg"
+          width={1024}
+          height={636}
         />
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: '0' }}
@@ -266,20 +267,24 @@ const Vobb = () => {
           <div className=" h-5p w-14 bgblack dark:bg-white "></div>
         </div>
 
-        <div className="border border-gray-500 w-full h-425 flex justify-center items-center ">
-          <motion.img
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0.5, scale: 0 },
+          }}
+          className="border border-gray-500 w-full h-425 flex justify-center items-center "
+        >
+          <Image
             src="https://res.cloudinary.com/davak/image/upload/v1649105315/philip/image_2_lalq7b.svg"
             className=" sm:h-72 h-36 "
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            variants={{
-              visible: { opacity: 1, scale: 1 },
-              hidden: { opacity: 0.5, scale: 0 },
-            }}
+            width={756}
+            height={288}
           />
-        </div>
+        </motion.div>
       </div>
 
       <motion.div
@@ -318,10 +323,18 @@ const Vobb = () => {
           This always leads to;
         </p>
         <ul className="airbnb-cereal-light text-base leading-7  pl-6 work-p dark:text-white mt-1 ">
-          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>Fraud</li>
-          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>Loss of money for students</li>
-          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>Loss of prospects for university</li>
-          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>Trust issues</li>
+          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>
+            Fraud
+          </li>
+          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>
+            Loss of money for students
+          </li>
+          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>
+            Loss of prospects for university
+          </li>
+          <li className={`-mt-1 ${theme === 'light' ? 'li' : 'li-dark'}`}>
+            Trust issues
+          </li>
         </ul>
       </motion.div>
 
@@ -408,7 +421,9 @@ const Vobb = () => {
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Wants to be able to trust these agents</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+                    Wants to be able to trust these agents
+                  </li>
                   <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to access these agents on her phone or
                     computer
@@ -422,7 +437,9 @@ const Vobb = () => {
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Wants to be able to trust these agents</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+                    Wants to be able to trust these agents
+                  </li>
                   <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to access these agents on her phone or
                     computer
@@ -492,7 +509,9 @@ const Vobb = () => {
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Wants to be able to trust these agents</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+                    Wants to be able to trust these agents
+                  </li>
                   <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to access these agents on her phone or
                     computer
@@ -506,7 +525,9 @@ const Vobb = () => {
                     Wants to be able to get access to more credible agents and
                     make her choice
                   </li>
-                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Wants to be able to trust these agents</li>
+                  <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+                    Wants to be able to trust these agents
+                  </li>
                   <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
                     Wants to be able to access these agents on her phone or
                     computer
@@ -602,7 +623,9 @@ const Vobb = () => {
         </p>
 
         <ul className="airbnb-cereal-light text-base leading-6 work-p dark:text-white mt-1 pl-8">
-          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Setting up profile</li>
+          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+            Setting up profile
+          </li>
           <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
             Accepting / declining activation requests from Agents (Activation
             requests will be explained under {'‘'}Agents{'’'})
@@ -648,7 +671,9 @@ const Vobb = () => {
           on Vobb. The university admin will have the following rights;
         </p>
         <ul className="airbnb-cereal-light text-base leading-6 work-p dark:text-white  pl-8">
-          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>Setting up profile</li>
+          <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
+            Setting up profile
+          </li>
           <li className={`${theme === 'light' ? 'li' : 'li-dark'}`}>
             Accepting / declining activation requests from Agents (Activation
             requests will be explained under {'‘'}Agents{'’'})
@@ -730,7 +755,7 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/davak/image/upload/v1649399806/philip/Frame_1__mtdxct.svg" />
+            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399806/philip/Frame_1__mtdxct.svg" width={1024} height={803}/>
           </div>
         </div>
 
@@ -741,7 +766,7 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/davak/image/upload/v1649399045/philip/Frame_2__ts2so3.svg" />
+            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399045/philip/Frame_2__ts2so3.svg" width={1024} height={803}/>
           </div>
         </div>
 
@@ -752,7 +777,7 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/davak/image/upload/v1649399458/philip/Frame_3__vqvbyv.svg" />
+            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399458/philip/Frame_3__vqvbyv.svg" width={1024} height={803}/>
           </div>
         </div>
 
@@ -763,7 +788,7 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/davak/image/upload/v1649399209/philip/Frame_4__m18j69.svg" />
+            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399209/philip/Frame_4__m18j69.svg" width={1024} height={803}/>
           </div>
         </div>
 
@@ -774,7 +799,7 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/davak/image/upload/v1649399433/philip/Frame_5__u7qlof.svg" />
+            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399433/philip/Frame_5__u7qlof.svg" width={1024} height={803}/>
           </div>
         </div>
 
@@ -785,7 +810,7 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/davak/image/upload/v1649399306/philip/Frame_6__ngmimh.svg" />
+            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399306/philip/Frame_6__ngmimh.svg" width={1024} height={803}/>
           </div>
         </div>
 
@@ -796,7 +821,7 @@ const Vobb = () => {
             </h6>
           </div>
           <div>
-            <img src="https://res.cloudinary.com/davak/image/upload/v1649399791/philip/Frame_7__v3w4ya.svg" />
+            <Image src="https://res.cloudinary.com/davak/image/upload/v1649399791/philip/Frame_7__v3w4ya.svg" width={1024} height={803}/>
           </div>
         </div>
       </div>
