@@ -724,7 +724,7 @@ const Invest = () => {
             <Image
               width={1024}
               height={500}
-              src="https://res.cloudinary.com/davak/image/upload/v1649322701/philip/Group_48095355_fk26n4.svg"
+              src="https://res.cloudinary.com/davak/image/upload/v1649683238/philip/Group_48095355_lyc5or.png"
               alt="image"
               placeholder="blur"
               blurDataURL={rgbDataURL(225, 236, 255)}
@@ -747,7 +747,7 @@ const Invest = () => {
             <h6 className="airbnb-cereal-medium text-base ls2 devby dark:text-white leading-8 mt-8 mb-4">
               Dashboard
             </h6>
-            <p className="airbnb-cereal-light text-base devby dark:text-white leading-7">
+            <p className="airbnb-cereal-light text-base devby dark:text-white leading-7" style={{maxWidth:'385px'}}>
               A user friendly dashboard that brings to the forefront every
               aspect of the app experience. Users will be able to view their
               wallet and investment balance, see progress of their portfolio,
@@ -756,13 +756,13 @@ const Invest = () => {
               them make the best investment decisions
             </p>
           </div>
-          <div className="flex-1 -ml-40 ">
+          <div className="flex-1 -ml-44 ">
             <img
               // width={883}
               // height={799}
-              src="https://res.cloudinary.com/davak/image/upload/c_scale,h_885,w_1000/v1649261656/philip/Samsung_Galaxy_Note_20_Ultra_czj0bw.svg"
+              src="https://res.cloudinary.com/davak/image/upload/v1649683582/philip/Samsung_Galaxy_Note_20_Ultra_oy5rcj.png"
               alt="image"
-              style={{ transform: 'scale(1.2)' }}
+              style={{ transform: 'scale(1.2)', marginLeft:"-50px" }}
             />
           </div>
         </div>
